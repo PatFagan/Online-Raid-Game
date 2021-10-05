@@ -21,6 +21,7 @@ public class Player : Photon.MonoBehaviour
         {
             playerCamera.SetActive(true);
             username.text = PhotonNetwork.playerName;
+            username.color = Color.blue;
         }
         else
         {
