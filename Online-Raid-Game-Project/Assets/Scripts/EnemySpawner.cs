@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemy;
     float timer;
 
-    const int MAX_ENEMIES = 50;
+    const int MAX_ENEMIES = 10;
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (timer >= spawnTime && GameObject.FindGameObjectsWithTag("Enemy").Length < MAX_ENEMIES)
         {
-            Instantiate(enemy, transform.position, Quaternion.identity);
+            PhotonNetwork.Instantiate(enemy.name, transform.position, Quaternion.identity, 0);
             timer = 0;
         }
     }

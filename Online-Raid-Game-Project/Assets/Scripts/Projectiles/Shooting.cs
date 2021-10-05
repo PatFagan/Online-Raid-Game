@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class Shooting : Photon.MonoBehaviour
 {
     public float timeBetweenShots, offsetX, offsetY;
     public GameObject projectile;
+    public PhotonView photonView;
 
     Vector3 bulletSpawnPos;
     float timer;
@@ -18,12 +19,16 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime; // timer
-
-        if (Input.GetButton("Shoot") && timer >= timeBetweenShots)
+        if (photonView.isMine)
         {
-            Instantiate(projectile, transform.position + bulletSpawnPos, Quaternion.identity);
-            timer = 0;
+            timer += Time.deltaTime; // timer
+
+            if (Input.GetButton("Shoot") && timer >= timeBetweenShots)
+            {
+                PhotonNetwork.Instantiate(projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
+                timer = 0;
+            }
         }
+        
     }
 }

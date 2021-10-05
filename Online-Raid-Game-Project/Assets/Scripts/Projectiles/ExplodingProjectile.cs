@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplodingProjectile : MonoBehaviour
+public class ExplodingProjectile : Photon.MonoBehaviour
 {
     public string targetTag;
     Rigidbody2D rigidbody;
@@ -46,7 +46,7 @@ public class ExplodingProjectile : MonoBehaviour
     {
         for (int i = 0; i < NUM_OF_SHARDS; i++)
         {
-            Instantiate(explosionShard, transform.position, Quaternion.identity);
+            PhotonNetwork.Instantiate(explosionShard.name, transform.position, Quaternion.identity, 0);
         }
     }
 }
