@@ -32,12 +32,12 @@ public class GameInstanceManager : MonoBehaviour
 
     private void CheckInput()
     {
-        if (isDisconnectUIoff && Input.GetKeyDown(KeyCode.Escape)) // disable escape menu
+        if (isDisconnectUIoff && Input.GetButtonDown("Escape")) // disable escape menu
         {
             disconnectUI.SetActive(false);
             isDisconnectUIoff = false;
         } 
-        else if (!isDisconnectUIoff && Input.GetKeyDown(KeyCode.Escape)) // enable escape menu
+        else if (!isDisconnectUIoff && Input.GetButtonDown("Escape")) // enable escape menu
         {
             disconnectUI.SetActive(true);
             isDisconnectUIoff = true;

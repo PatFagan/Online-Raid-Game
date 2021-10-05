@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306357940204652233}
   - component: {fileID: 6092763097916774189}
+  - component: {fileID: 78557012836080162}
   - component: {fileID: 3289545750395028893}
   - component: {fileID: 6789428320531826816}
   - component: {fileID: 8248431117049871961}
@@ -17,7 +18,7 @@ GameObject:
   - component: {fileID: -3169488195106030556}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,6 +60,23 @@ MonoBehaviour:
   invincibilityTimer: 3
   dodgeCooldown: 2
   dodgeForce: 50
+--- !u!114 &78557012836080162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767793471138761913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenShots: 0.1
+  offsetX: 0
+  offsetY: 0
+  projectile: {fileID: 4800514412932659124, guid: 709177c89a15c954b8165704fbff4fa6,
+    type: 3}
 --- !u!212 &3289545750395028893
 SpriteRenderer:
   m_ObjectHideFlags: 0
