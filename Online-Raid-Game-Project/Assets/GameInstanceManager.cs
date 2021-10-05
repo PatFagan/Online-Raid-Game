@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameInstanceManager : MonoBehaviour
 {
     public GameObject playerPrefab;
     public GameObject gameCanvas;
     public GameObject sceneCamera;
+    public TMP_Text pingText;
 
     private void Awake()
     {
         gameCanvas.SetActive(true);
+    }
+
+    private void Update()
+    {
+        pingText.text = "Ping: " + PhotonNetwork.GetPing();
     }
 
     public void SpawnPlayer()
