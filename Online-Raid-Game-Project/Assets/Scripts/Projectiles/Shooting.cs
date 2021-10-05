@@ -22,7 +22,6 @@ public class Shooting : MonoBehaviour
 
         if (Input.GetButton("Shoot") && timer >= timeBetweenShots)
         {
-            Debug.Log("shoot");
             Instantiate(projectile, transform.position + bulletSpawnPos, Quaternion.identity);
             timer = 0;
         }
