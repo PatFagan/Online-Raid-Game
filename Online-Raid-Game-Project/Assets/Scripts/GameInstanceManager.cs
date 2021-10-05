@@ -32,19 +32,19 @@ public class GameInstanceManager : MonoBehaviour
 
     private void CheckInput()
     {
-        if (isDisconnectUIoff && Input.GetKeyDown(KeyCode.Escape))
+        if (isDisconnectUIoff && Input.GetKeyDown(KeyCode.Escape)) // disable escape menu
         {
             disconnectUI.SetActive(false);
             isDisconnectUIoff = false;
         } 
-        else if (!isDisconnectUIoff && Input.GetKeyDown(KeyCode.Escape))
+        else if (!isDisconnectUIoff && Input.GetKeyDown(KeyCode.Escape)) // enable escape menu
         {
             disconnectUI.SetActive(true);
             isDisconnectUIoff = true;
         }
     }
 
-    public void LeaveRoom()
+    public void LeaveRoom() // disconnect
     {
         PhotonNetwork.LeaveRoom();
         PhotonNetwork.LoadLevel("MainMenu");

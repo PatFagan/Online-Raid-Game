@@ -13,24 +13,32 @@ public class Player : Photon.MonoBehaviour
     public float moveSpeed;
     public TMP_Text username;
     public GameObject playerCamera;
+
     public SpriteRenderer sr;
+    public Rigidbody2D rb;
+
+    // dodge variables
+    float dodgeTimer, dodgeForceX, dodgeForceY;
+    // invincibility variables
+    public float invincibilityTimer;
+    public float dodgeCooldown, dodgeForce;
 
     private void Awake()
     {
         if (photonView.isMine)
         {
-            playerCamera.SetActive(true);
-            username.text = PhotonNetwork.playerName;
-            username.color = Color.blue;
+            playerCamera.SetActive(true); // activate your camera
+            username.text = PhotonNetwork.playerName; // set your username
+            username.color = Color.yellow; // username color
         }
         else
         {
-            username.text = photonView.owner.NickName;
-            username.color = Color.cyan;
+            username.text = photonView.owner.NickName; // set other players' usernames
+            username.color = Color.cyan; // username color
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (photonView.isMine)
         {
@@ -40,13 +48,26 @@ public class Player : Photon.MonoBehaviour
             Vector3 movement = new Vector3(horizontal, vertical, 0f);
             transform.position += movement * Time.deltaTime * moveSpeed;
 
+            // sprite flipping
             if (horizontal > 0)
                 photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
             else if (horizontal < 0)
                 photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
+
+            // dodge
+            dodgeTimer += Time.deltaTime; // dodge cooldown timer
+            invincibilityTimer -= Time.deltaTime;
+
+            if (Input.GetButton("Dodge") && dodgeTimer > dodgeCooldown) // if dodge button pressed, the dodge
+            {
+                rb.velocity = movement * new Vector2(dodgeForce, dodgeForce);
+                dodgeTimer = 0;
+                invincibilityTimer = .5f;
+            }
         }
     }
 
+    // sprite flipping
     [PunRPC]
     private void FlipTrue()
     {

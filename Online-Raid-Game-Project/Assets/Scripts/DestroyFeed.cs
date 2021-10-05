@@ -8,6 +8,6 @@ public class DestroyFeed : MonoBehaviour
 
     private void OnEnable()
     {
-        Destroy(gameObject, destroyTime);
+        Destroy(gameObject, destroyTime); // delete feed text after x secs
     }
 }
