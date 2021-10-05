@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class ExplosionShard : MonoBehaviour
 {
     public string targetTag;
     Rigidbody2D rigidbody;
@@ -12,10 +12,12 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
+        // set direction/speed
         rigidbody = GetComponent<Rigidbody2D>();
-        //rigidbody.velocity = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity;
-        rigidbody.velocity = new Vector2(projectileSpeedX, projectileSpeedY); // set direction/speed
-        Destroy(gameObject, projectileLifespan); // destroy projectile if no collision detected in x seconds
+        float randomValueX = Random.Range(-10f, 10f);
+        float randomValueY = Random.Range(-10f, 10f);
+        rigidbody.velocity = new Vector2(randomValueX * projectileSpeedX, randomValueY * projectileSpeedY);
+        Destroy(gameObject, projectileLifespan); // destroy after lifespan expires
     }
 
     void OnTriggerEnter2D(Collider2D collider)

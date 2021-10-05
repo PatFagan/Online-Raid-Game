@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4800514412932659127}
   - component: {fileID: 4800514412932659123}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: ExplodingProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,6 +52,8 @@ MonoBehaviour:
   projectileLifespan: 3
   damage: 1
   deathEffect: {fileID: 0}
+  explosionShard: {fileID: 4800514412932659124, guid: 35544042ca5d044418b025b3c68d9f22,
+    type: 3}
 --- !u!212 &4800514412932659126
 SpriteRenderer:
   m_ObjectHideFlags: 0
