@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class TakeDamage : MonoBehaviour
 {
-    public float health, speed, knockbackForce;
+    public float health, knockbackForce;//, speed;
     private float stunTime;
     public GameObject deathEffect;
     private SpriteRenderer spriteRenderer;
     Rigidbody2D enemyRigidbody;
+    public string damageTag;
 
-    public bool cameraShake = false, invincible = false;
-    public int damage;
+    public bool invincible = false;
 
     float knockbackTimer; // times the duration of a knockback
 
@@ -33,8 +33,17 @@ public class Enemy : MonoBehaviour
         // enemy is dead
         if (health <= 0)
         {
-            Destroy(gameObject);
-            if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
+            if (gameObject.tag != "Player")
+            {
+                if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
+                Destroy(gameObject);
+            }
+            else if (gameObject.tag == "Player")
+            {
+                Debug.Log("player death");
+                health = 5;
+            }
+
             //powerUpScript.SpawnPowerUp(transform.position);
         }
 
@@ -42,18 +51,18 @@ public class Enemy : MonoBehaviour
         if (stunTime > 0f)
         {
             spriteRenderer.color = Color.red;
-            speed = 0f;
+            //speed = 0f;
         }
         else if (stunTime <= 0)
         {
             spriteRenderer.color = Color.white;
-            speed = 1f;
+            //speed = 1f;
         }
         stunTime -= Time.deltaTime; // stun timer
         knockbackTimer -= Time.deltaTime; // knockback timer
     }
 
-    public void TakeDamage(int damage)
+    public void DealDamage(int damage)
     {
         if (!invincible)
         {
@@ -61,15 +70,6 @@ public class Enemy : MonoBehaviour
             stunTime = .2f; // stunned when hit
             Debug.Log("took damage, health: " + health);
         }
-    }
-
-    IEnumerator Flash()
-    {
-        spriteRenderer.color = Color.blue;
-        cameraShake = true;
-        yield return new WaitForSeconds(1);
-        spriteRenderer.color = Color.white;
-        cameraShake = false;
     }
 
     public void Knockback()
@@ -90,9 +90,9 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         // when hit by a player projectile, take damage
-        if (collider.gameObject.tag == "PlayerProjectile") // if collides with water, slow down
+        if (collider.gameObject.tag == damageTag) // if collides with water, slow down
         {
-            TakeDamage(1);
+            DealDamage(1);
             Knockback();
         }
     }

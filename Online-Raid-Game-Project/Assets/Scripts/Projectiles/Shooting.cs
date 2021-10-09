@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shooting : Photon.MonoBehaviour
 {
     public float timeBetweenShots, offsetX, offsetY;
-    public GameObject projectile;
+    public GameObject projectile1, projectile2;
     public PhotonView photonView;
 
     Vector3 bulletSpawnPos;
@@ -25,7 +25,12 @@ public class Shooting : Photon.MonoBehaviour
 
             if (Input.GetButton("Shoot") && timer >= timeBetweenShots)
             {
-                PhotonNetwork.Instantiate(projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate(projectile1.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
+                timer = 0;
+            }
+            if (Input.GetButton("Shoot2") && timer >= timeBetweenShots)
+            {
+                PhotonNetwork.Instantiate(projectile2.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
                 timer = 0;
             }
         }

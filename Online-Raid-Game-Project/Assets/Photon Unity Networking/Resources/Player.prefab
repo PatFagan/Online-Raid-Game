@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1306357940204652233}
   - component: {fileID: 6092763097916774189}
   - component: {fileID: 78557012836080162}
+  - component: {fileID: 16997195743896477}
   - component: {fileID: 3289545750395028893}
   - component: {fileID: 6789428320531826816}
   - component: {fileID: 8248431117049871961}
@@ -75,9 +76,28 @@ MonoBehaviour:
   timeBetweenShots: 0.1
   offsetX: 0
   offsetY: 0
-  projectile: {fileID: 4800514412932659124, guid: 709177c89a15c954b8165704fbff4fa6,
+  projectile1: {fileID: 4800514412932659124, guid: 709177c89a15c954b8165704fbff4fa6,
+    type: 3}
+  projectile2: {fileID: 4800514412932659124, guid: 666ad9419f02a044b9ed6baf3e9ef314,
     type: 3}
   photonView: {fileID: 3164080963034878962}
+--- !u!114 &16997195743896477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767793471138761913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b8ca5fc39412147b6ee22a33ff60a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  knockbackForce: 3
+  deathEffect: {fileID: 0}
+  damageTag: EnemyProjectile
+  invincible: 0
 --- !u!212 &3289545750395028893
 SpriteRenderer:
   m_ObjectHideFlags: 0

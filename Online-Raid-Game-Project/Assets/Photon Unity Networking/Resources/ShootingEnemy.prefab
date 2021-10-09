@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6816626947216994393}
   - component: {fileID: 4759307322315503815}
-  - component: {fileID: 3159373894137033673}
+  - component: {fileID: -2932415705466967064}
   - component: {fileID: 3116471163201400607}
   - component: {fileID: 8975096580288250508}
   - component: {fileID: 1353273592053059006}
   - component: {fileID: 6429587699551445431}
   - component: {fileID: 8039484753953741718}
   m_Layer: 0
-  m_Name: ChasingEnemy
+  m_Name: ShootingEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   deathEffect: {fileID: 0}
   damageTag: PlayerProjectile
   invincible: 0
---- !u!114 &3159373894137033673
+--- !u!114 &-2932415705466967064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,11 +63,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2484825620673052758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02ee619ec2d521e45ba0f94b8c0331b3, type: 3}
+  m_Script: {fileID: 11500000, guid: d00f9dc54c18ab840ae419ec3167b559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  targetTag: Player
+  timeBetweenShots: 0.5
+  offsetX: 0
+  offsetY: 0
+  projectile: {fileID: 4800514412932659124, guid: 789b4fc4e42f9c4469013edf8071aef6,
+    type: 3}
+  photonView: {fileID: 6429587699551445431}
 --- !u!50 &3116471163201400607
 Rigidbody2D:
   serializedVersion: 4
