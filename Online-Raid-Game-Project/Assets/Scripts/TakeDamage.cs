@@ -86,7 +86,7 @@ public class TakeDamage : MonoBehaviour
         {
             health -= damage; // take damage
             stunTime = .2f; // stunned when hit
-            Debug.Log("took damage, health: " + health);
+            //Debug.Log("took damage, health: " + health);
         }
     }
 

@@ -29,6 +29,14 @@ public class GrapplingHook : MonoBehaviour
 
     void FixedUpdate()
     {
+        Vector2 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        float dist = Mathf.Sqrt(Mathf.Pow(playerPos.x - transform.position.x, 2)
+            + Mathf.Pow(playerPos.y - transform.position.y, 2));
+        Debug.Log(dist);
+        if (dist < 3)
+        {
+            grapplingMovement = false;
+        }
         if (grapplingMovement)
         {
             // movetowards(this_pos, target, step)
