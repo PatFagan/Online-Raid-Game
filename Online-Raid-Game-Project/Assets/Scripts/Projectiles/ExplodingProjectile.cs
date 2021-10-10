@@ -25,7 +25,6 @@ public class ExplodingProjectile : Photon.MonoBehaviour
 
     void Explode()
     {
-        Debug.Log("explode");
         for (int i = 0; i < NUM_OF_SHARDS; i++)
         {
             PhotonNetwork.Instantiate(explosionShard.name, transform.position, Quaternion.identity, 0);

@@ -7,6 +7,7 @@ public class AimedProjectile : MonoBehaviour
     Rigidbody2D rigidbody;
     public int damage;
     public GameObject deathEffect;
+    public float speed;
 
     Player playerScript;
 
@@ -16,6 +17,6 @@ public class AimedProjectile : MonoBehaviour
 
         // set direction/speed
         rigidbody = GetComponent<Rigidbody2D>();
-        rigidbody.velocity = playerScript.movement * 50;
+        rigidbody.velocity = playerScript.movement * speed;
     }
 }

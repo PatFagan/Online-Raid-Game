@@ -8,8 +8,7 @@ public class Player : Photon.MonoBehaviour
 {
     public PhotonView photonView;
 
-    float horizontal;
-    float vertical;
+    public float horizontal, vertical;
     public float moveSpeed;
     public TMP_Text username;
     public GameObject playerCamera;

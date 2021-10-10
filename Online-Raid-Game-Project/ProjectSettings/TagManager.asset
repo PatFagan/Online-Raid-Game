@@ -8,6 +8,7 @@ TagManager:
   - PlayerProjectile
   - EnemyProjectile
   - Wall
+  - GrapplingHook
   layers:
   - Default
   - TransparentFX

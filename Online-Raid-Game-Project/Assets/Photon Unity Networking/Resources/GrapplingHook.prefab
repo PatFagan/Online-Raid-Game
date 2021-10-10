@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 7003797446899670566}
   m_Layer: 0
   m_Name: GrapplingHook
-  m_TagString: PlayerProjectile
+  m_TagString: GrapplingHook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,6 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   deathEffect: {fileID: 0}
+  speed: 100
 --- !u!114 &-1897529764594146384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,6 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35892c40bb884954290727f47986bfd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grapplingSpeed: 20
 --- !u!212 &4800514412932659126
 SpriteRenderer:
   m_ObjectHideFlags: 0

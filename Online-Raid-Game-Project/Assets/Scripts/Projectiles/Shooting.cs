@@ -5,12 +5,14 @@ using UnityEngine;
 public class Shooting : Photon.MonoBehaviour
 {
     public float timeBetweenShots, offsetX, offsetY;
-    public GameObject projectile1, projectile2, projectile3;
+    public GameObject projectile;
     public PhotonView photonView;
-
+    public string shootingButton, projectileTag;
+    public int MAX_PROJECTILES;
     Vector3 bulletSpawnPos;
     float timer;
 
+    Player playerScript;
     void Start()
     {
         bulletSpawnPos = new Vector3(offsetX, offsetY, 0);
@@ -23,19 +25,10 @@ public class Shooting : Photon.MonoBehaviour
         {
             timer += Time.deltaTime; // timer
 
-            if (Input.GetButton("Shoot") && timer >= timeBetweenShots)
+            if (Input.GetButton(shootingButton) && timer >= timeBetweenShots 
+                && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
             {
-                PhotonNetwork.Instantiate(projectile1.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
-                timer = 0;
-            }
-            if (Input.GetButton("Shoot2") && timer >= timeBetweenShots)
-            {
-                PhotonNetwork.Instantiate(projectile2.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
-                timer = 0;
-            }
-            if (Input.GetButton("Grappling") && timer >= timeBetweenShots)
-            {
-                PhotonNetwork.Instantiate(projectile3.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate(projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
                 timer = 0;
             }
         }

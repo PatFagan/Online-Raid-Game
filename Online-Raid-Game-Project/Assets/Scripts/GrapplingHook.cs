@@ -4,23 +4,40 @@ using UnityEngine;
 
 public class GrapplingHook : MonoBehaviour
 {
-    public float speed; 
+    public float grapplingSpeed;
+    Rigidbody2D rigidbody;
+    bool grapplingMovement;
 
     Player playerScript;
     void Start()
     {
+        grapplingMovement = false;
+        // get player script
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-
-        // set direction/speed
-        playerScript.movement = Vector2.MoveTowards(GameObject.FindGameObjectWithTag("Player").transform.position, transform.position, speed * Time.fixedDeltaTime);
+        rigidbody = GetComponent<Rigidbody2D>(); // get rigidbody
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        // if collides with target, destroy
+        // if collides with wall
         if (collider.gameObject.tag == "Wall")
         {
-            Destroy(gameObject);
+            rigidbody.velocity = new Vector2(0,0); // stop hook movement
+            grapplingMovement = true;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (grapplingMovement)
+        {
+            // movetowards(this_pos, target, step)
+            GameObject.FindGameObjectWithTag("Player").transform.position =
+                Vector2.MoveTowards(
+                    GameObject.FindGameObjectWithTag("Player").transform.position,
+                    transform.position,
+                    grapplingSpeed * Time.fixedDeltaTime
+                );
         }
     }
 }
