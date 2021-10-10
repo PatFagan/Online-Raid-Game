@@ -59,8 +59,9 @@ MonoBehaviour:
   sr: {fileID: 3289545750395028893}
   rb: {fileID: 6789428320531826816}
   invincibilityTimer: 3
-  dodgeCooldown: 2
-  dodgeForce: 50
+  invincible: 0
+  dodgeCooldown: 1
+  dodgeForce: 30
 --- !u!114 &78557012836080162
 MonoBehaviour:
   m_ObjectHideFlags: 0

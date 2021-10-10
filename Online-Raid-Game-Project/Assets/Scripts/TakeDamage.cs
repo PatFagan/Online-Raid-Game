@@ -17,12 +17,17 @@ public class TakeDamage : MonoBehaviour
 
     private Transform playerLoc;
 
+    Player playerScript;
+
     //SpawnPowerUps powerUpScript;
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>(); // sets sprite renderer component
         enemyRigidbody = GetComponent<Rigidbody2D>(); // sets sprite renderer component
         knockbackTimer = 0;
+
+        if (gameObject.tag == "Player")
+            playerScript = gameObject.GetComponent<Player>();
 
         //GameObject powerUpScriptHolder = GameObject.FindGameObjectWithTag("PowerUps");
         //powerUpScript = powerUpScriptHolder.GetComponent<SpawnPowerUps>();
@@ -60,11 +65,23 @@ public class TakeDamage : MonoBehaviour
         }
         stunTime -= Time.deltaTime; // stun timer
         knockbackTimer -= Time.deltaTime; // knockback timer
+
+        if (gameObject.tag == "Player")
+        {
+            if (playerScript.invincible == true)
+            {
+                spriteRenderer.color -= new Color(0f, 0f, 0f, .9f); // transluscent
+            }
+            else if (playerScript.invincible == false)
+            {
+                spriteRenderer.color += new Color(0f, 0f, 0f, 1f); // opaque
+            }
+        }
     }
 
     public void DealDamage(int damage)
     {
-        if (!invincible)
+        if (gameObject.tag != "Player" || !playerScript.invincible)
         {
             health -= damage; // take damage
             stunTime = .2f; // stunned when hit

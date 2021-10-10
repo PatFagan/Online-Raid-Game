@@ -21,6 +21,7 @@ public class Player : Photon.MonoBehaviour
     float dodgeTimer, dodgeForceX, dodgeForceY;
     // invincibility variables
     public float invincibilityTimer;
+    public bool invincible;
     public float dodgeCooldown, dodgeForce;
 
     private void Awake()
@@ -30,6 +31,7 @@ public class Player : Photon.MonoBehaviour
             playerCamera.SetActive(true); // activate your camera
             username.text = PhotonNetwork.playerName; // set your username
             username.color = Color.yellow; // username color
+            invincible = false;
         }
         else
         {
@@ -64,6 +66,10 @@ public class Player : Photon.MonoBehaviour
                 dodgeTimer = 0;
                 invincibilityTimer = .5f;
             }
+            if (invincibilityTimer > 0) // set invincibility
+                invincible = true;
+            else
+                invincible = false;
         }
     }
 
