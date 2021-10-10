@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4800514412932659120}
+  - component: {fileID: 817502723832897451}
   - component: {fileID: 4800514412932659121}
   - component: {fileID: 4800514412932659126}
   - component: {fileID: 4800514412932659127}
@@ -36,6 +37,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817502723832897451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800514412932659124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3951e3674842c5141b452326f0c6823a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileLifespan: 1
+  deathEffect: {fileID: 0}
+  targetTag: 
 --- !u!114 &4800514412932659121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,12 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8948b3452b6971f4dadfd31a9beb717c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTag: 
-  projectileSpeedX: 0
-  projectileSpeedY: 0
-  projectileLifespan: 3
-  damage: 1
-  deathEffect: {fileID: 0}
+  projectileLifespan: 1
   explosionShard: {fileID: 4800514412932659124, guid: 35544042ca5d044418b025b3c68d9f22,
     type: 3}
 --- !u!212 &4800514412932659126
@@ -95,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: b8981b4bfb73cfe4ebba7bfb5a74a6ce,
     type: 3}
   m_Color: {r: 0.5754717, g: 0.45386258, b: 0.496651, a: 1}

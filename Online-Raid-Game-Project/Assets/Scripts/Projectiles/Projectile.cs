@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class Projectile : Photon.MonoBehaviour
 {
-    public string targetTag;
-    public float projectileSpeedX, projectileSpeedY, projectileLifespan;
-    public int damage;
+    public float projectileLifespan;
     public GameObject deathEffect;
+    public string targetTag;
 
     void Start()
     {
-        //rigidbody.velocity = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity;
-        Destroy(gameObject, projectileLifespan);
+        Destroy(gameObject, projectileLifespan); // destroy after lifespan expires
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        // if collides with target, deal damage then destroy
+        // if collides with target, destroy
         if (collider.gameObject.tag == targetTag)
         {
             if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
-            // GameObject.FindGameObjectWithTag("HealthBar").GetComponent<Health>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }

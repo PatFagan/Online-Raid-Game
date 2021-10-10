@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class ExplodingProjectile : Photon.MonoBehaviour
 {
-    public string targetTag;
-    Rigidbody2D rigidbody;
-    public float projectileSpeedX, projectileSpeedY, projectileLifespan;
-    public int damage;
-    public GameObject deathEffect;
+    public float projectileLifespan;
     public GameObject explosionShard;
 
     float timer;
@@ -17,10 +13,6 @@ public class ExplodingProjectile : Photon.MonoBehaviour
     void Start()
     {
         timer = projectileLifespan;
-        rigidbody = GetComponent<Rigidbody2D>();
-        //rigidbody.velocity = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity;
-        rigidbody.velocity = new Vector2(projectileSpeedX, projectileSpeedY); // set direction/speed
-        Destroy(gameObject, projectileLifespan);
     }
 
     void Update()
@@ -31,19 +23,9 @@ public class ExplodingProjectile : Photon.MonoBehaviour
             Explode();
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        // if collides with target, deal damage then destroy
-        if (collider.gameObject.tag == targetTag)
-        {
-            if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
-            // GameObject.FindGameObjectWithTag("HealthBar").GetComponent<Health>().TakeDamage(damage);
-            Destroy(gameObject);
-        }
-    }
-
     void Explode()
     {
+        Debug.Log("explode");
         for (int i = 0; i < NUM_OF_SHARDS; i++)
         {
             PhotonNetwork.Instantiate(explosionShard.name, transform.position, Quaternion.identity, 0);

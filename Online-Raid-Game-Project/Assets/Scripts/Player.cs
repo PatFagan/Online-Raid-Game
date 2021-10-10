@@ -24,6 +24,8 @@ public class Player : Photon.MonoBehaviour
     public bool invincible;
     public float dodgeCooldown, dodgeForce;
 
+    public Vector3 movement;
+
     private void Awake()
     {
         if (photonView.isMine)
@@ -47,7 +49,7 @@ public class Player : Photon.MonoBehaviour
             // movement
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
-            Vector3 movement = new Vector3(horizontal, vertical, 0f);
+            movement = new Vector3(horizontal, vertical, 0f);
             transform.position += movement * Time.deltaTime * moveSpeed;
 
             // sprite flipping
