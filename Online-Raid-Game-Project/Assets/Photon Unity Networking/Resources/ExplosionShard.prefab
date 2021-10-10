@@ -52,6 +52,7 @@ MonoBehaviour:
   projectileLifespan: 0.5
   deathEffect: {fileID: 0}
   targetTag: 
+  damage: 1
 --- !u!114 &621848883035687570
 MonoBehaviour:
   m_ObjectHideFlags: 0

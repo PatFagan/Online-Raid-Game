@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1306357940204652233}
   - component: {fileID: 6092763097916774189}
   - component: {fileID: 78557012836080162}
+  - component: {fileID: -6852090910933129108}
+  - component: {fileID: -526698119890885693}
   - component: {fileID: -422152664867896068}
   - component: {fileID: 16997195743896477}
   - component: {fileID: 3289545750395028893}
@@ -57,7 +59,6 @@ MonoBehaviour:
   horizontal: 0
   vertical: 0
   moveSpeed: 10
-  canMove: 0
   username: {fileID: 3293074985356544434}
   playerCamera: {fileID: 5075635062777184268}
   sr: {fileID: 3289545750395028893}
@@ -85,10 +86,10 @@ MonoBehaviour:
   projectile: {fileID: 4800514412932659124, guid: 23656b0984b822746ac1a164e0defbdf,
     type: 3}
   photonView: {fileID: 3164080963034878962}
-  shootingButton: Grappling
+  shootingButton: Shoot4
   projectileTag: GrapplingHook
   MAX_PROJECTILES: 1
---- !u!114 &-422152664867896068
+--- !u!114 &-6852090910933129108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,6 +102,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenShots: 0.1
+  offsetX: 0
+  offsetY: 0
+  projectile: {fileID: 4800514412932659124, guid: 666ad9419f02a044b9ed6baf3e9ef314,
+    type: 3}
+  photonView: {fileID: 3164080963034878962}
+  shootingButton: Shoot3
+  projectileTag: PlayerProjectile
+  MAX_PROJECTILES: 20
+--- !u!114 &-526698119890885693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767793471138761913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenShots: 0.4
+  offsetX: 0
+  offsetY: 0
+  projectile: {fileID: 4800514412932659124, guid: 709177c89a15c954b8165704fbff4fa6,
+    type: 3}
+  photonView: {fileID: 3164080963034878962}
+  shootingButton: Shoot2
+  projectileTag: PlayerProjectile
+  MAX_PROJECTILES: 5
+--- !u!114 &-422152664867896068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767793471138761913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenShots: 0.2
   offsetX: 0
   offsetY: 0
   projectile: {fileID: 4800514412932659124, guid: d18c9fb93fb5d594b9b00421c3aa5aff,

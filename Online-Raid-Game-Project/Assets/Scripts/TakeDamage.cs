@@ -52,7 +52,7 @@ public class TakeDamage : MonoBehaviour
             //powerUpScript.SpawnPowerUp(transform.position);
         }
 
-        // stunned enemy
+        // stunned
         if (stunTime > 0f)
         {
             spriteRenderer.color = Color.red;
@@ -66,6 +66,7 @@ public class TakeDamage : MonoBehaviour
         stunTime -= Time.deltaTime; // stun timer
         knockbackTimer -= Time.deltaTime; // knockback timer
 
+        // invincibility transluscence
         if (gameObject.tag == "Player")
         {
             if (playerScript.invincible == true)
@@ -109,7 +110,7 @@ public class TakeDamage : MonoBehaviour
         // when hit by a player projectile, take damage
         if (collider.gameObject.tag == damageTag) // if collides with water, slow down
         {
-            DealDamage(1);
+            DealDamage(collider.gameObject.GetComponent<Projectile>().damage);
             Knockback();
         }
     }

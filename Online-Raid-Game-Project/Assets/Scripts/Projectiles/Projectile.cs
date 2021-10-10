@@ -7,6 +7,7 @@ public class Projectile : Photon.MonoBehaviour
     public float projectileLifespan;
     public GameObject deathEffect;
     public string targetTag;
+    public int damage;
 
     void Start()
     {

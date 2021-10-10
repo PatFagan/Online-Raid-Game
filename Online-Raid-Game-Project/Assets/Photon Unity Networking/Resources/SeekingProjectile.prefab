@@ -52,6 +52,7 @@ MonoBehaviour:
   projectileLifespan: 1
   deathEffect: {fileID: 0}
   targetTag: Enemy
+  damage: 2
 --- !u!114 &6972526804237461395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ee619ec2d521e45ba0f94b8c0331b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   targetTag: Enemy
 --- !u!212 &4800514412932659126
 SpriteRenderer:

@@ -5,7 +5,6 @@ using UnityEngine;
 public class AimedProjectile : MonoBehaviour
 {
     Rigidbody2D rigidbody;
-    public int damage;
     public GameObject deathEffect;
     public float speed;
 
