@@ -33,11 +33,13 @@ public class Player : Photon.MonoBehaviour
             username.text = PhotonNetwork.playerName; // set your username
             username.color = Color.yellow; // username color
             invincible = false;
+            gameObject.name = "Player1";
         }
         else
         {
             username.text = photonView.owner.NickName; // set other players' usernames
             username.color = Color.cyan; // username color
+            gameObject.name = "Player2";
         }
     }
 

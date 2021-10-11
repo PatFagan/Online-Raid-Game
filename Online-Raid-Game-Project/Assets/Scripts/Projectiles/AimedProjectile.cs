@@ -9,17 +9,16 @@ public class AimedProjectile : Photon.MonoBehaviour
     public float speed;
 
     Player playerScript;
-    public PhotonView photonView;
+    GameObject player;
 
     void Start()
     {
-        if (photonView.isMine)
-        {
-            playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        //print(photonView.gameObject.name);
+        player = GameObject.Find("Player1"); // get gameObject owning photonView
+        playerScript = player.GetComponent<Player>(); // get player script
 
-            // set direction/speed
-            rigidbody = GetComponent<Rigidbody2D>();
-            rigidbody.velocity = playerScript.movement * speed;
-        }
+        // set direction/speed
+        rigidbody = GetComponent<Rigidbody2D>();
+        rigidbody.velocity = playerScript.movement * speed;
     }
 }

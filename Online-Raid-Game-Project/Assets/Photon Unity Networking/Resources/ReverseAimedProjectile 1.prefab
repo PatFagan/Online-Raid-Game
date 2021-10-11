@@ -67,9 +67,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 0}
   speed: -50
-  photonView: {fileID: 3164080963034878962, guid: 1db5d82bfa3991d46a26b772d772413e,
+  playerPhotonView: {fileID: 3164080963034878962, guid: 1db5d82bfa3991d46a26b772d772413e,
     type: 3}
-  player: {fileID: 1767793471138761913, guid: 1db5d82bfa3991d46a26b772d772413e, type: 3}
 --- !u!212 &4800514412932659126
 SpriteRenderer:
   m_ObjectHideFlags: 0
