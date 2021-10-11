@@ -53,6 +53,7 @@ MonoBehaviour:
   projectileLifespan: 1
   deathEffect: {fileID: 0}
   targetTag: 
+  damage: 0
 --- !u!114 &-4361988350491621441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,9 +66,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a449505e395129c43ad9799c826c186d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
   deathEffect: {fileID: 0}
   speed: 100
+  photonView: {fileID: 3164080963034878962, guid: 1db5d82bfa3991d46a26b772d772413e,
+    type: 3}
+  player: {fileID: 1767793471138761913, guid: 1db5d82bfa3991d46a26b772d772413e, type: 3}
 --- !u!114 &-1897529764594146384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +84,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grapplingSpeed: 20
+  player: {fileID: 1767793471138761913, guid: 1db5d82bfa3991d46a26b772d772413e, type: 3}
+  photonView: {fileID: 3164080963034878962, guid: 1db5d82bfa3991d46a26b772d772413e,
+    type: 3}
 --- !u!212 &4800514412932659126
 SpriteRenderer:
   m_ObjectHideFlags: 0
