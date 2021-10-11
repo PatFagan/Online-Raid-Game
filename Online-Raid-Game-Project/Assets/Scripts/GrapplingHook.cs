@@ -7,13 +7,17 @@ public class GrapplingHook : MonoBehaviour
     public float grapplingSpeed;
     Rigidbody2D rigidbody;
     bool grapplingMovement;
-
+    GameObject player;
     Player playerScript;
+    PhotonView photonView;
+
     void Start()
     {
         grapplingMovement = false;
         // get player script
-        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.Find("Player1");
+        photonView = player.GetComponent<PhotonView>();
+        playerScript = player.GetComponent<Player>();
         rigidbody = GetComponent<Rigidbody2D>(); // get rigidbody
     }
 
@@ -29,7 +33,7 @@ public class GrapplingHook : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        Vector2 playerPos = player.transform.position;
         float dist = Mathf.Sqrt(Mathf.Pow(playerPos.x - transform.position.x, 2)
             + Mathf.Pow(playerPos.y - transform.position.y, 2));
         //Debug.Log(dist);
@@ -39,13 +43,16 @@ public class GrapplingHook : MonoBehaviour
         }
         if (grapplingMovement)
         {
-            // movetowards(this_pos, target, step)
-            GameObject.FindGameObjectWithTag("Player").transform.position =
-                Vector2.MoveTowards(
-                    GameObject.FindGameObjectWithTag("Player").transform.position,
-                    transform.position,
-                    grapplingSpeed * Time.fixedDeltaTime
-                );
+            if (photonView.isMine)
+            {
+                // movetowards(this_pos, target, step)
+                player.transform.position =
+                    Vector2.MoveTowards(
+                        playerPos,
+                        transform.position,
+                        grapplingSpeed * Time.fixedDeltaTime
+                    );
+            }
         }
     }
 }

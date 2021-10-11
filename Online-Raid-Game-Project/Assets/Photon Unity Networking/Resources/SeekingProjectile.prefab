@@ -67,6 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   targetTag: Enemy
+  photonView: {fileID: 16938679245497595}
 --- !u!212 &4800514412932659126
 SpriteRenderer:
   m_ObjectHideFlags: 0

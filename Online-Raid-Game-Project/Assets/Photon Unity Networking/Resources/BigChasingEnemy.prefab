@@ -68,6 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   targetTag: Player
+  photonView: {fileID: 6429587699551445431}
 --- !u!50 &3116471163201400607
 Rigidbody2D:
   serializedVersion: 4
