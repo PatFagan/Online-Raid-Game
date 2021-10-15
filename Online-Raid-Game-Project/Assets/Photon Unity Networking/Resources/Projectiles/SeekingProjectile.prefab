@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4800514412932659120}
   - component: {fileID: 8923011922795832361}
-  - component: {fileID: -4361988350491621441}
+  - component: {fileID: 6972526804237461395}
   - component: {fileID: 4800514412932659126}
   - component: {fileID: 4800514412932659127}
   - component: {fileID: 4800514412932659123}
   - component: {fileID: 16938679245497595}
   - component: {fileID: 7003797446899670566}
   m_Layer: 0
-  m_Name: ReverseAimedProjectile 1
+  m_Name: SeekingProjectile
   m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,9 +51,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileLifespan: 1
   deathEffect: {fileID: 0}
-  targetTag: Enemy
-  damage: 3
---- !u!114 &-4361988350491621441
+  targetTag:
+  - Enemy
+  - Wall
+  damage: 2
+--- !u!114 &6972526804237461395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,13 +64,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4800514412932659124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a449505e395129c43ad9799c826c186d, type: 3}
+  m_Script: {fileID: 11500000, guid: 02ee619ec2d521e45ba0f94b8c0331b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathEffect: {fileID: 0}
-  speed: -50
-  playerPhotonView: {fileID: 3164080963034878962, guid: 1db5d82bfa3991d46a26b772d772413e,
-    type: 3}
+  speed: 10
+  targetTag: Enemy
+  photonView: {fileID: 16938679245497595}
 --- !u!212 &4800514412932659126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -111,7 +112,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: b8981b4bfb73cfe4ebba7bfb5a74a6ce,
     type: 3}
-  m_Color: {r: 0.64585394, g: 0.4627451, b: 0.8117647, a: 1}
+  m_Color: {r: 0.8113208, g: 0.77241, b: 0.46383056, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

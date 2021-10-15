@@ -28,7 +28,7 @@ public class Shooting : Photon.MonoBehaviour
             if (Input.GetButton(shootingButton) && timer >= timeBetweenShots 
                 && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
             {
-                PhotonNetwork.Instantiate(projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate("Projectiles/" + projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
                 timer = 0;
             }
         }

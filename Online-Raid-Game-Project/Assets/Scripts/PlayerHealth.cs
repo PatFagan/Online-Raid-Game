@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : Photon.MonoBehaviour
 {
     public float health, knockbackForce;//, speed;
     private float stunTime, baseHealth, baseSpeed;
     public GameObject deathEffect;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
+    public GameObject playerSprite;
     Rigidbody2D enemyRigidbody;
     public string damageTag;
 
@@ -16,16 +17,18 @@ public class PlayerHealth : MonoBehaviour
     float knockbackTimer; // times the duration of a knockback
 
     Player playerScript;
+    GameInstanceManager gameManagerScript;
 
     void Start()
     {
         baseHealth = health;
-        spriteRenderer = GetComponent<SpriteRenderer>(); // sets sprite renderer component
         enemyRigidbody = GetComponent<Rigidbody2D>(); // sets sprite renderer component
         knockbackTimer = 0;
 
         playerScript = gameObject.GetComponent<Player>();
         baseSpeed = playerScript.moveSpeed;
+
+        gameManagerScript = GameObject.Find("GameManager").GetComponent<GameInstanceManager>();
     }
 
     void Update()
@@ -95,14 +98,40 @@ public class PlayerHealth : MonoBehaviour
             DealDamage(collider.gameObject.GetComponent<Projectile>().damage);
             Knockback();
         }
+        if (health <= 0)
+        {
+            for (int i = 2; i < 7; i++)
+            {
+                if (collider.gameObject.name == "Player" + i) // if other player hits you, revive
+                {
+                    RevivedByPlayer(collider);
+                }
+            }
+        }
     }
 
     IEnumerator PlayerDeath()
     {
-        playerScript.moveSpeed = 0f;
-        //gameObject.transform.Rotate(0f, 0f, 5f, Space.Self);
-        yield return new WaitForSeconds(2);
-        health = baseHealth; 
-        playerScript.moveSpeed = baseSpeed;
+        playerScript.moveSpeed = 0f; // stop movement
+        playerSprite.transform.Rotate(0f, 0f, 5f, Space.Self); // rotate
+        yield return new WaitForSeconds(5); // wait
+        Revive();
+    }
+
+    void RevivedByPlayer(Collider2D Reviver)
+    {
+        playerSprite.transform.rotation = Quaternion.identity; // reset rotation
+        health = baseHealth; // refill health
+        playerScript.moveSpeed = baseSpeed; // set speed back to normal
+        // output to reviver feed
+        gameManagerScript.ReviveFeed(Reviver.GetComponent<PhotonView>().owner.NickName, 
+            gameObject.GetComponent<PhotonView>().owner.NickName);
+    }
+
+    void Revive()
+    {
+        playerSprite.transform.rotation = Quaternion.identity; // reset rotation
+        health = baseHealth; // refill health
+        playerScript.moveSpeed = baseSpeed; // set speed back to normal
     }
 }

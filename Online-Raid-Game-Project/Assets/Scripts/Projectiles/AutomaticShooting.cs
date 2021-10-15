@@ -25,7 +25,7 @@ public class AutomaticShooting : Photon.MonoBehaviour
 
             if (timer >= timeBetweenShots)
             {
-                PhotonNetwork.Instantiate(projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate("Projectiles/" + projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
                 timer = 0;
             }
         }

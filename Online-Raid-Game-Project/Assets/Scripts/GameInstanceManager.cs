@@ -62,17 +62,25 @@ public class GameInstanceManager : MonoBehaviour
 
     private void OnPhotonPlayerConnected(PhotonPlayer player)
     {
-        GameObject obj = Instantiate(playerFeed, new Vector2(0, 0), Quaternion.identity); // create text line
-        obj.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
-        obj.GetComponent<TMP_Text>().text = player.NickName + " joined the game"; // set text
-        obj.GetComponent<TMP_Text>().color = Color.green; // set text color
+        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
+        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
+        feedLine.GetComponent<TMP_Text>().text = player.NickName + " joined the game"; // set text
+        feedLine.GetComponent<TMP_Text>().color = Color.green; // set text color
     }
 
     private void OnPhotonPlayerDisconnected(PhotonPlayer player)
     {
-        GameObject obj = Instantiate(playerFeed, new Vector2(0, 0), Quaternion.identity); // create text line
-        obj.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
-        obj.GetComponent<TMP_Text>().text = player.NickName + " left the game";
-        obj.GetComponent<TMP_Text>().color = Color.red;
+        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
+        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
+        feedLine.GetComponent<TMP_Text>().text = player.NickName + " left the game";
+        feedLine.GetComponent<TMP_Text>().color = Color.red;
+    }
+
+    public void ReviveFeed(string reviver, string revivee)
+    {
+        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
+        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
+        feedLine.GetComponent<TMP_Text>().text = reviver + " revived " + revivee;
+        feedLine.GetComponent<TMP_Text>().color = Color.yellow;
     }
 }

@@ -27,7 +27,7 @@ public class ExplodingProjectile : Photon.MonoBehaviour
     {
         for (int i = 0; i < NUM_OF_SHARDS; i++)
         {
-            PhotonNetwork.Instantiate(explosionShard.name, transform.position, Quaternion.identity, 0);
+            PhotonNetwork.Instantiate("Projectiles/" + explosionShard.name, transform.position, Quaternion.identity, 0);
         }
     }
 }

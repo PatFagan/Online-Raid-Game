@@ -16,7 +16,6 @@ public class AvoidSafeZones : MonoBehaviour
         // when in a safezone, become immune
         if (collider.gameObject.tag == "SafeZone") // if collides with water, slow down
         {
-            print("run away");
             followScript.speed *= -1f;
             StartCoroutine(TurnBackAround());
         }

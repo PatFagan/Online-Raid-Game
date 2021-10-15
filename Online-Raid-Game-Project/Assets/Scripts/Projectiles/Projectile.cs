@@ -6,8 +6,10 @@ public class Projectile : Photon.MonoBehaviour
 {
     public float projectileLifespan;
     public GameObject deathEffect;
-    public string targetTag;
+    const int NUM_OF_TAGS = 5; 
+    public string[] targetTag = new string[NUM_OF_TAGS];
     public int damage;
+    int i;
 
     void Start()
     {
@@ -17,14 +19,17 @@ public class Projectile : Photon.MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         // if collides with target, destroy
-        if (collider.gameObject.tag == targetTag)
+        for (i = 0; i < NUM_OF_TAGS; i++)
         {
-            if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
-            Destroy(gameObject);
-        }
-        if (collider.gameObject.tag == "SafeZone") // if collides with water, slow down
-        {
-            Destroy(gameObject);
+            if (collider.gameObject.tag == targetTag[i])
+            {
+                if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
+                Destroy(gameObject);
+            }
+            if (collider.gameObject.tag == "SafeZone") // if collides with water, slow down
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

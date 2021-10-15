@@ -9,16 +9,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4800514412932659120}
-  - component: {fileID: 8923011922795832361}
-  - component: {fileID: -4361988350491621441}
+  - component: {fileID: 817502723832897451}
+  - component: {fileID: 4800514412932659121}
   - component: {fileID: 4800514412932659126}
   - component: {fileID: 4800514412932659127}
   - component: {fileID: 4800514412932659123}
   - component: {fileID: 16938679245497595}
   - component: {fileID: 7003797446899670566}
   m_Layer: 0
-  m_Name: AimedProjectile
-  m_TagString: PlayerProjectile
+  m_Name: ExplodingProjectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +37,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8923011922795832361
+--- !u!114 &817502723832897451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,9 +51,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileLifespan: 1
   deathEffect: {fileID: 0}
-  targetTag: Enemy
-  damage: 3
---- !u!114 &-4361988350491621441
+  targetTag:
+  - Wall
+  damage: 0
+--- !u!114 &4800514412932659121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,12 +63,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4800514412932659124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a449505e395129c43ad9799c826c186d, type: 3}
+  m_Script: {fileID: 11500000, guid: 8948b3452b6971f4dadfd31a9beb717c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathEffect: {fileID: 0}
-  speed: 50
-  playerPhotonView: {fileID: 3164080963034878962, guid: 1db5d82bfa3991d46a26b772d772413e,
+  projectileLifespan: 1
+  explosionShard: {fileID: 4800514412932659124, guid: 35544042ca5d044418b025b3c68d9f22,
     type: 3}
 --- !u!212 &4800514412932659126
 SpriteRenderer:
@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: b8981b4bfb73cfe4ebba7bfb5a74a6ce,
     type: 3}
-  m_Color: {r: 0.64585394, g: 0.4627451, b: 0.8117647, a: 1}
+  m_Color: {r: 0.5754717, g: 0.45386258, b: 0.496651, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

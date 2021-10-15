@@ -8,20 +8,14 @@ public class TakeDamage : MonoBehaviour
     private float stunTime;
     public GameObject deathEffect;
     private SpriteRenderer spriteRenderer;
-    Rigidbody2D enemyRigidbody;
     public string damageTag;
 
-    public bool invincible = false;
-
     float knockbackTimer; // times the duration of a knockback
-
-    private Transform playerLoc;
 
     //SpawnPowerUps powerUpScript;
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>(); // sets sprite renderer component
-        enemyRigidbody = GetComponent<Rigidbody2D>(); // sets sprite renderer component
         knockbackTimer = 0;
     }
 
