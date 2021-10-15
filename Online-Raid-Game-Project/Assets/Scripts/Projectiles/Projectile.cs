@@ -19,7 +19,7 @@ public class Projectile : Photon.MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         // if collides with target, destroy
-        for (i = 0; i < NUM_OF_TAGS; i++)
+        for (i = 0; i < targetTag.Length; i++)
         {
             if (collider.gameObject.tag == targetTag[i])
             {

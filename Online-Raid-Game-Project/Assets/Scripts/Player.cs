@@ -24,9 +24,11 @@ public class Player : Photon.MonoBehaviour
     public float dodgeCooldown, dodgeForce;
 
     public Vector3 movement;
+    int index;
 
     private void Awake()
     {
+        index = 1;
         if (photonView.isMine)
         {
             playerCamera.SetActive(true); // activate your camera
@@ -39,7 +41,8 @@ public class Player : Photon.MonoBehaviour
         {
             username.text = photonView.owner.NickName; // set other players' usernames
             username.color = Color.cyan; // username color
-            gameObject.name = "Player2";
+            index++;
+            gameObject.name = "Player" + index;
         }
     }
 

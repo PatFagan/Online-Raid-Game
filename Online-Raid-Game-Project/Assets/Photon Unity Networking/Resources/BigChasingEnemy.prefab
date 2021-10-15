@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1353273592053059006}
   - component: {fileID: 6429587699551445431}
   - component: {fileID: 8039484753953741718}
+  - component: {fileID: 4198969536290079929}
   m_Layer: 0
   m_Name: BigChasingEnemy
   m_TagString: Enemy
@@ -53,7 +54,6 @@ MonoBehaviour:
   knockbackForce: 15
   deathEffect: {fileID: 0}
   damageTag: PlayerProjectile
-  invincible: 0
 --- !u!114 &3159373894137033673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: b8981b4bfb73cfe4ebba7bfb5a74a6ce,
     type: 3}
   m_Color: {r: 0.6132076, g: 0.46626917, b: 0.46626917, a: 1}
@@ -273,3 +273,15 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4198969536290079929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2484825620673052758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3f6aebce49d904dbc77756ffb4c131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
