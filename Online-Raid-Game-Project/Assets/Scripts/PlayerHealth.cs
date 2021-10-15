@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TakeDamage : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     public float health, knockbackForce;//, speed;
-    private float stunTime;
+    private float stunTime, baseHealth, baseSpeed;
     public GameObject deathEffect;
     private SpriteRenderer spriteRenderer;
     Rigidbody2D enemyRigidbody;
@@ -15,14 +15,17 @@ public class TakeDamage : MonoBehaviour
 
     float knockbackTimer; // times the duration of a knockback
 
-    private Transform playerLoc;
+    Player playerScript;
 
-    //SpawnPowerUps powerUpScript;
     void Start()
     {
+        baseHealth = health;
         spriteRenderer = GetComponent<SpriteRenderer>(); // sets sprite renderer component
         enemyRigidbody = GetComponent<Rigidbody2D>(); // sets sprite renderer component
         knockbackTimer = 0;
+
+        playerScript = gameObject.GetComponent<Player>();
+        baseSpeed = playerScript.moveSpeed;
     }
 
     void Update()
@@ -30,10 +33,8 @@ public class TakeDamage : MonoBehaviour
         // enemy is dead
         if (health <= 0)
         {
-            if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
-            Destroy(gameObject);
-
-            //powerUpScript.SpawnPowerUp(transform.position);
+            //Debug.Log("player death");
+            StartCoroutine(PlayerDeath());
         }
 
         // stunned
@@ -49,12 +50,26 @@ public class TakeDamage : MonoBehaviour
         }
         stunTime -= Time.deltaTime; // stun timer
         knockbackTimer -= Time.deltaTime; // knockback timer
+
+        // invincibility transluscence
+        if (playerScript.invincible == true)
+        {
+            spriteRenderer.color -= new Color(0f, 0f, 0f, .9f); // transluscent
+        }
+        else if (playerScript.invincible == false)
+        {
+            spriteRenderer.color += new Color(0f, 0f, 0f, 1f); // opaque
+        }
     }
 
     public void DealDamage(int damage)
     {
-        health -= damage; // take damage
-        stunTime = .2f; // stunned when hit
+        if (playerScript.invincible == false)
+        {
+            health -= damage; // take damage
+            stunTime = .2f; // stunned when hit
+            //Debug.Log("took damage, health: " + health);
+        }
     }
 
     public void Knockback()
@@ -80,5 +95,14 @@ public class TakeDamage : MonoBehaviour
             DealDamage(collider.gameObject.GetComponent<Projectile>().damage);
             Knockback();
         }
+    }
+
+    IEnumerator PlayerDeath()
+    {
+        playerScript.moveSpeed = 0f;
+        //gameObject.transform.Rotate(0f, 0f, 5f, Space.Self);
+        yield return new WaitForSeconds(2);
+        health = baseHealth; 
+        playerScript.moveSpeed = baseSpeed;
     }
 }

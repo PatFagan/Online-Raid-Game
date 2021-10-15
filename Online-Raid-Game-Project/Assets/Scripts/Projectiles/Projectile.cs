@@ -22,5 +22,9 @@ public class Projectile : Photon.MonoBehaviour
             if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
             Destroy(gameObject);
         }
+        if (collider.gameObject.tag == "SafeZone") // if collides with water, slow down
+        {
+            Destroy(gameObject);
+        }
     }
 }

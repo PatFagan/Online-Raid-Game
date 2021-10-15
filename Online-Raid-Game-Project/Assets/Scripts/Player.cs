@@ -13,8 +13,8 @@ public class Player : Photon.MonoBehaviour
     public TMP_Text username;
     public GameObject playerCamera;
 
-    public SpriteRenderer sr;
-    public Rigidbody2D rb;
+    public SpriteRenderer spriteRenderer;
+    public Rigidbody2D rigidbody;
 
     // dodge variables
     float dodgeTimer, dodgeForceX, dodgeForceY;
@@ -65,7 +65,7 @@ public class Player : Photon.MonoBehaviour
 
             if (Input.GetButton("Dodge") && dodgeTimer > dodgeCooldown) // if dodge button pressed, the dodge
             {
-                rb.velocity = movement * new Vector2(dodgeForce, dodgeForce);
+                rigidbody.velocity = movement * new Vector2(dodgeForce, dodgeForce);
                 dodgeTimer = 0;
                 invincibilityTimer = .5f;
             }
@@ -80,12 +80,22 @@ public class Player : Photon.MonoBehaviour
     [PunRPC]
     private void FlipTrue()
     {
-        sr.flipX = true;
+        spriteRenderer.flipX = true;
     }
 
     [PunRPC]
     private void FlipFalse()
     {
-        sr.flipX = false;
+        spriteRenderer.flipX = false;
+    }
+
+    // safe zone triggers
+    void OnTriggerStay2D(Collider2D collider)
+    {
+        // when in a safezone, become immune
+        if (collider.gameObject.tag == "SafeZone") // if collides with water, slow down
+        {
+            invincibilityTimer = 1f;
+        }
     }
 }

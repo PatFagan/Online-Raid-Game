@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1306357940204652233}
   - component: {fileID: 6092763097916774189}
+  - component: {fileID: 4355348376205479589}
   - component: {fileID: 78557012836080162}
   - component: {fileID: -6852090910933129108}
   - component: {fileID: -526698119890885693}
   - component: {fileID: -422152664867896068}
-  - component: {fileID: 16997195743896477}
   - component: {fileID: 3289545750395028893}
   - component: {fileID: 6789428320531826816}
   - component: {fileID: 8248431117049871961}
@@ -61,13 +61,30 @@ MonoBehaviour:
   moveSpeed: 10
   username: {fileID: 3293074985356544434}
   playerCamera: {fileID: 5075635062777184268}
-  sr: {fileID: 3289545750395028893}
-  rb: {fileID: 6789428320531826816}
+  spriteRenderer: {fileID: 3289545750395028893}
+  rigidbody: {fileID: 6789428320531826816}
   invincibilityTimer: 3
   invincible: 0
   dodgeCooldown: 1
   dodgeForce: 30
   movement: {x: 0, y: 0, z: 0}
+--- !u!114 &4355348376205479589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767793471138761913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c74907be8c182046ac1d41528f0c41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  knockbackForce: 3
+  deathEffect: {fileID: 0}
+  damageTag: EnemyProjectile
+  invincible: 0
 --- !u!114 &78557012836080162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,23 +169,6 @@ MonoBehaviour:
   shootingButton: Shoot
   projectileTag: PlayerProjectile
   MAX_PROJECTILES: 20
---- !u!114 &16997195743896477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767793471138761913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86b8ca5fc39412147b6ee22a33ff60a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 5
-  knockbackForce: 3
-  deathEffect: {fileID: 0}
-  damageTag: EnemyProjectile
-  invincible: 0
 --- !u!212 &3289545750395028893
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: b8981b4bfb73cfe4ebba7bfb5a74a6ce,
     type: 3}
   m_Color: {r: 0.1943397, g: 0.6304216, b: 1, a: 1}

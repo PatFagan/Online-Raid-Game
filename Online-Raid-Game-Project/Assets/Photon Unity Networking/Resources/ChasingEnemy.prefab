@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6816626947216994393}
   - component: {fileID: 4759307322315503815}
   - component: {fileID: 3159373894137033673}
+  - component: {fileID: 180530822216697574}
   - component: {fileID: 3116471163201400607}
   - component: {fileID: 8975096580288250508}
   - component: {fileID: 1353273592053059006}
@@ -69,6 +70,18 @@ MonoBehaviour:
   speed: 5
   targetTag: Player
   photonView: {fileID: 6429587699551445431}
+--- !u!114 &180530822216697574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2484825620673052758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3f6aebce49d904dbc77756ffb4c131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &3116471163201400607
 Rigidbody2D:
   serializedVersion: 4

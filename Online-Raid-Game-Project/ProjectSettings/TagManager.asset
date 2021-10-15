@@ -9,6 +9,7 @@ TagManager:
   - EnemyProjectile
   - Wall
   - GrapplingHook
+  - SafeZone
   layers:
   - Default
   - TransparentFX
