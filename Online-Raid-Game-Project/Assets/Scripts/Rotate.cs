@@ -6,7 +6,7 @@ public class Rotate : MonoBehaviour
 {
     public float xRotation, yRotation, zRotation;
 
-    void Update()
+    void FixedUpdate()
     {
         gameObject.transform.Rotate(xRotation, yRotation, zRotation, Space.Self); // rotate
     }

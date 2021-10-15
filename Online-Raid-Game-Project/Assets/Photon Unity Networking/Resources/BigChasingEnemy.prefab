@@ -52,7 +52,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   knockbackForce: 15
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 1185799072453919286, guid: e9d128b2c684ee64bb9fe4081b3c726f,
+    type: 3}
   damageTag: PlayerProjectile
 --- !u!114 &3159373894137033673
 MonoBehaviour:

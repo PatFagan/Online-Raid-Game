@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerHealth : Photon.MonoBehaviour
 {
-    public float health, knockbackForce;//, speed;
-    private float stunTime, baseHealth, baseSpeed;
+    public float health, knockbackForce, baseHealth;//, speed;
+    private float stunTime, baseSpeed;
     public GameObject deathEffect;
     public SpriteRenderer spriteRenderer;
     public GameObject playerSprite;
@@ -33,6 +33,7 @@ public class PlayerHealth : Photon.MonoBehaviour
 
     void Update()
     {
+        print(health);
         // enemy is dead
         if (health <= 0)
         {

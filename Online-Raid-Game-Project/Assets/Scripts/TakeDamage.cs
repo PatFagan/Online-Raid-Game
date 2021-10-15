@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TakeDamage : MonoBehaviour
+public class TakeDamage : Photon.MonoBehaviour
 {
     public float health, knockbackForce;//, speed;
     private float stunTime;
@@ -24,7 +24,7 @@ public class TakeDamage : MonoBehaviour
         // enemy is dead
         if (health <= 0)
         {
-            if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
+            if (deathEffect) { PhotonNetwork.Instantiate(deathEffect.name, transform.position, Quaternion.identity, 0); }
             Destroy(gameObject);
 
             //powerUpScript.SpawnPowerUp(transform.position);
