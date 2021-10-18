@@ -55,9 +55,10 @@ public class GameInstanceManager : MonoBehaviour
     {
         float randomValue = Random.Range(-10f, 10f);
 
-        PhotonNetwork.Instantiate(playerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
+        playerPrefab.SetActive(true);
+        //PhotonNetwork.Instantiate(playerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
         gameCanvas.SetActive(false);
-        //sceneCamera.SetActive(false);
+        sceneCamera.SetActive(true);
     }
 
     private void OnPhotonPlayerConnected(PhotonPlayer player)

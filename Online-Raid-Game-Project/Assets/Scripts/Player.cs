@@ -31,7 +31,7 @@ public class Player : Photon.MonoBehaviour
         index = 1;
         if (photonView.isMine)
         {
-            playerCamera.SetActive(true); // activate your camera
+            //playerCamera.SetActive(true); // activate your camera
             username.text = PhotonNetwork.playerName; // set your username
             username.color = Color.yellow; // username color
             invincible = false;
