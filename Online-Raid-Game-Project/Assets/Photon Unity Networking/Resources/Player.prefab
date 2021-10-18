@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 1306357940204652233}
   - component: {fileID: 6092763097916774189}
   - component: {fileID: 4355348376205479589}
+  - component: {fileID: 842352993940099555}
   - component: {fileID: 78557012836080162}
   - component: {fileID: -6852090910933129108}
   - component: {fileID: -526698119890885693}
@@ -166,11 +167,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   knockbackForce: 3
+  baseHealth: 0
   deathEffect: {fileID: 0}
   spriteRenderer: {fileID: 5809184032724405452}
   playerSprite: {fileID: 856553249277404037}
   damageTag: EnemyProjectile
   invincible: 0
+--- !u!114 &842352993940099555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767793471138761913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cdfce0e3f9b54585f5ee68d070020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &78557012836080162
 MonoBehaviour:
   m_ObjectHideFlags: 0
