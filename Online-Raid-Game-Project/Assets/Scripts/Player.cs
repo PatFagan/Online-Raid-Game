@@ -11,7 +11,6 @@ public class Player : Photon.MonoBehaviour
     public float horizontal, vertical;
     public float moveSpeed;
     public TMP_Text username;
-    public GameObject playerCamera;
 
     public SpriteRenderer spriteRenderer;
     public Rigidbody2D rigidbody;
@@ -54,7 +53,7 @@ public class Player : Photon.MonoBehaviour
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
             movement = new Vector3(horizontal, vertical, 0f);
-            transform.position += movement * Time.deltaTime * moveSpeed;
+            rigidbody.velocity = movement * moveSpeed;
 
             // sprite flipping
             if (horizontal > 0)

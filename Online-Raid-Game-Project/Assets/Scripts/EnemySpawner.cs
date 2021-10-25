@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemy;
     float timer;
 
-    const int MAX_ENEMIES = 10;
+    public int MAX_ENEMIES = 10;
 
     void Start()
     {
