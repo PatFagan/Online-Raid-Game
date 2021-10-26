@@ -145,7 +145,6 @@ GameObject:
   - component: {fileID: 1306357940204652233}
   - component: {fileID: 5246084186370819549}
   - component: {fileID: 4447844771491796573}
-  - component: {fileID: 3745872726487670346}
   - component: {fileID: 7417958082128886718}
   - component: {fileID: 8434782255117133872}
   - component: {fileID: 6455946415771992526}
@@ -195,7 +194,6 @@ MonoBehaviour:
   vertical: 0
   moveSpeed: 10
   username: {fileID: 3203762865695600904}
-  playerCamera: {fileID: 0}
   spriteRenderer: {fileID: 5217908197829339332}
   rigidbody: {fileID: 2430211157694140359}
   invincibilityTimer: 3
@@ -223,27 +221,6 @@ MonoBehaviour:
   playerSprite: {fileID: 7627400860160224995}
   damageTag: EnemyProjectile
   invincible: 0
---- !u!114 &3745872726487670346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767793471138761913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenShots: 0.5
-  offsetX: 0
-  offsetY: 0
-  projectile: {fileID: 4800514412932659124, guid: 23656b0984b822746ac1a164e0defbdf,
-    type: 3}
-  photonView: {fileID: 7686634051939010412}
-  shootingButton: Shoot4
-  projectileTag: GrapplingHook
-  MAX_PROJECTILES: 1
 --- !u!114 &7417958082128886718
 MonoBehaviour:
   m_ObjectHideFlags: 0

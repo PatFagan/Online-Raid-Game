@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (timer >= spawnTime && GameObject.FindGameObjectsWithTag("Enemy").Length < MAX_ENEMIES)
         {
-            PhotonNetwork.Instantiate(enemy.name, transform.position, Quaternion.identity, 0);
+            PhotonNetwork.Instantiate("Enemies/" + enemy.name, transform.position, Quaternion.identity, 0);
             timer = 0;
         }
     }

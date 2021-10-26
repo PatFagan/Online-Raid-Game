@@ -68,7 +68,7 @@ MonoBehaviour:
   timeBetweenShots: 0.5
   offsetX: 0
   offsetY: 0
-  projectile: {fileID: 4800514412932659124, guid: 789b4fc4e42f9c4469013edf8071aef6,
+  projectile: {fileID: 4800514412932659124, guid: 1e507bc63ad97554b82c738127434028,
     type: 3}
   photonView: {fileID: 6429587699551445431}
 --- !u!50 &3116471163201400607
