@@ -67,7 +67,7 @@ public class Player : Photon.MonoBehaviour
 
             if (Input.GetButton("Dodge") && dodgeTimer > dodgeCooldown) // if dodge button pressed, the dodge
             {
-                rigidbody.velocity = movement * new Vector2(dodgeForce, dodgeForce);
+                rigidbody.AddForce(10f * movement * new Vector2(dodgeForce, dodgeForce), ForceMode2D.Impulse);
                 dodgeTimer = 0;
                 invincibilityTimer = .5f;
             }
