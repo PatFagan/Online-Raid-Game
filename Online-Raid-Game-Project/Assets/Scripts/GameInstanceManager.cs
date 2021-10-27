@@ -25,7 +25,7 @@ public class GameInstanceManager : MonoBehaviour
     private void Update()
     {
         // sets ping text
-        pingText.text = "Ping: " + PhotonNetwork.GetPing();
+        //pingText.text = "Ping: " + PhotonNetwork.GetPing();
 
         CheckInput();
     }

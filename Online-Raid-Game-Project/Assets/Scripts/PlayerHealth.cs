@@ -33,7 +33,7 @@ public class PlayerHealth : Photon.MonoBehaviour
 
     void Update()
     {
-        print(health);
+        //print(health);
         // enemy is dead
         if (health <= 0)
         {

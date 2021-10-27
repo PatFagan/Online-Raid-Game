@@ -22,7 +22,7 @@ public class RotateTowardsDirection : MonoBehaviour
         Vector3 oldPosition = transform.position;
         yield return new WaitForSeconds(.1f);
         Vector3 moveDirection = transform.position - oldPosition;
-        print(moveDirection);
+        //print(moveDirection);
         if (moveDirection != Vector3.zero)
         {
             float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
