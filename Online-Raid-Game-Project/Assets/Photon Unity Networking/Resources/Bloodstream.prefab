@@ -29,7 +29,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.9079, y: -0.8197, z: 143.51761}
   m_LocalScale: {x: 5.4159, y: 53.83375, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4227431412261743069}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseMoveSpeed: 10
+  bloodstreamDirection: 
 --- !u!61 &-7236876940675598228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +126,57 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &7234651378388769897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4227431412261743069}
+  - component: {fileID: 2952116784591499611}
+  m_Layer: 0
+  m_Name: StreamStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4227431412261743069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7234651378388769897}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.0000000044287938, z: 0}
+  m_LocalScale: {x: 0.18464153, y: 0.018575707, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1191251841814288661}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2952116784591499611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7234651378388769897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1550e97417ff33d4c8f941bdf1b99e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenShots: 0.1
+  offsetX: 0
+  offsetY: 0
+  projectile: {fileID: 8648448657937605412, guid: c0898e304b1b0ab47b8a23b3db67466e,
+    type: 3}
+  shootingButton: 
+  projectileTag: DecorativeProjectile
+  randomMin: -3
+  randomMax: 3
+  MAX_PROJECTILES: 100
+  automatic: 1

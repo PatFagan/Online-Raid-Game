@@ -241,7 +241,10 @@ MonoBehaviour:
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot3
   projectileTag: PlayerProjectile
+  randomMin: 1
+  randomMax: 1
   MAX_PROJECTILES: 20
+  automatic: 0
 --- !u!114 &8434782255117133872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +265,10 @@ MonoBehaviour:
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot2
   projectileTag: PlayerProjectile
+  randomMin: 1
+  randomMax: 1
   MAX_PROJECTILES: 5
+  automatic: 0
 --- !u!114 &6455946415771992526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +289,10 @@ MonoBehaviour:
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot
   projectileTag: PlayerProjectile
+  randomMin: 1
+  randomMax: 1
   MAX_PROJECTILES: 20
+  automatic: 0
 --- !u!50 &2430211157694140359
 Rigidbody2D:
   serializedVersion: 4

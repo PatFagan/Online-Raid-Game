@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6816626947216994393}
   - component: {fileID: 4759307322315503815}
-  - component: {fileID: -2932415705466967064}
+  - component: {fileID: 5123659614805010535}
   - component: {fileID: 3116471163201400607}
   - component: {fileID: 8975096580288250508}
   - component: {fileID: 1353273592053059006}
@@ -53,7 +53,7 @@ MonoBehaviour:
   knockbackForce: 5
   deathEffect: {fileID: 0}
   damageTag: PlayerProjectile
---- !u!114 &-2932415705466967064
+--- !u!114 &5123659614805010535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,15 +62,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2484825620673052758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d00f9dc54c18ab840ae419ec3167b559, type: 3}
+  m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 0.5
+  timeBetweenShots: 0.3
   offsetX: 0
   offsetY: 0
   projectile: {fileID: 4800514412932659124, guid: 1e507bc63ad97554b82c738127434028,
     type: 3}
   photonView: {fileID: 6429587699551445431}
+  shootingButton: 
+  projectileTag: EnemyProjectile
+  MAX_PROJECTILES: 10
+  automatic: 1
 --- !u!50 &3116471163201400607
 Rigidbody2D:
   serializedVersion: 4

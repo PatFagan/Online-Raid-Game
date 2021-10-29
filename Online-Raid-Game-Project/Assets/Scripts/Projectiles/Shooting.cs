@@ -8,9 +8,11 @@ public class Shooting : Photon.MonoBehaviour
     public GameObject projectile;
     public PhotonView photonView;
     public string shootingButton, projectileTag;
+    public float randomMin = 1f, randomMax = 1f;
     public int MAX_PROJECTILES;
     Vector3 bulletSpawnPos;
     float timer;
+    public bool automatic = false;
 
     Player playerScript;
     void Start()
@@ -23,15 +25,27 @@ public class Shooting : Photon.MonoBehaviour
     {
         if (photonView.isMine)
         {
+            float randomValue = Random.Range(randomMin, randomMax);
             timer += Time.deltaTime; // timer
 
-            if (Input.GetButton(shootingButton) && timer >= timeBetweenShots 
-                && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
+            if (automatic == false)
             {
-                PhotonNetwork.Instantiate("Projectiles/" + projectile.name, transform.position + bulletSpawnPos, Quaternion.identity, 0);
-                timer = 0;
+                if (Input.GetButton(shootingButton) && timer >= timeBetweenShots
+                    && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
+                {
+                    PhotonNetwork.Instantiate("Projectiles/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
+                    timer = 0;
+                }
             }
-        }
-        
+            else if (automatic)
+            {
+                if (timer >= timeBetweenShots
+                    && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
+                {
+                    PhotonNetwork.Instantiate("Projectiles/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
+                    timer = 0;
+                }
+            }
+        }        
     }
 }
