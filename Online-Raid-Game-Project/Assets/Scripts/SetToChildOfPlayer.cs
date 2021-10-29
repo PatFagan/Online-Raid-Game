@@ -23,19 +23,31 @@ public class SetToChildOfPlayer : MonoBehaviour
     {
         if (!player)
             player = GameObject.FindGameObjectWithTag("Player");
+        if (Input.GetButton("Drop"))
+        {
+            if (onCollision)
+                StartCoroutine(DropItem());
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (onCollision)
         {
-            // when hit by a player projectile, take damage
-            if (collider.gameObject.tag == "Player") // if collides with water, slow down
+            // if player collides with item, pick up
+            if (collider.gameObject.tag == "Player")
             {
-                print("GRAB");
                 transform.position = player.transform.position;
                 this.transform.parent = player.transform;
             }
         }
+    }
+
+    IEnumerator DropItem()
+    {
+        onCollision = false;
+        transform.parent = null;
+        yield return new WaitForSeconds(1);
+        onCollision = true;
     }
 }
