@@ -6,11 +6,14 @@ public class SetToChildOfPlayer : MonoBehaviour
 {
     public bool onStart;
     public bool onCollision;
+    Vector3 offset;
+    public float offsetX, offsetY;
 
     GameObject player;
 
     void Start()
     {
+        offset = new Vector3(offsetX, offsetY, 0);
         player = GameObject.FindGameObjectWithTag("Player");
         if (onStart && player)
         {
@@ -37,9 +40,14 @@ public class SetToChildOfPlayer : MonoBehaviour
             // if player collides with item, pick up
             if (collider.gameObject.tag == "Player")
             {
-                transform.position = player.transform.position;
+                transform.position = player.transform.position + offset;
                 this.transform.parent = player.transform;
             }
+        }
+        // if another player shoots item, knock it off
+        if (collider.gameObject.tag == "PlayerProjectile")
+        {
+            StartCoroutine(DropItem());
         }
     }
 
