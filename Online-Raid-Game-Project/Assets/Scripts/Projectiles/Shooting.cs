@@ -33,7 +33,7 @@ public class Shooting : Photon.MonoBehaviour
                 if (Input.GetButton(shootingButton) && timer >= timeBetweenShots
                     && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
                 {
-                    PhotonNetwork.Instantiate("Projectiles/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
+                    PhotonNetwork.Instantiate("Projectile/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
                     timer = 0;
                 }
             }
@@ -42,7 +42,7 @@ public class Shooting : Photon.MonoBehaviour
                 if (timer >= timeBetweenShots
                     && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
                 {
-                    PhotonNetwork.Instantiate("Projectiles/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
+                    PhotonNetwork.Instantiate("Projectile/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
                     timer = 0;
                 }
             }

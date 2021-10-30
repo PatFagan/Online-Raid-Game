@@ -11,6 +11,7 @@ TagManager:
   - GrapplingHook
   - SafeZone
   - DecorativeProjectile
+  - Bloodstream
   layers:
   - Default
   - TransparentFX

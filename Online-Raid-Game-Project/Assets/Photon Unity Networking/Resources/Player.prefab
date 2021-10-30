@@ -145,7 +145,6 @@ GameObject:
   - component: {fileID: 1306357940204652233}
   - component: {fileID: 5246084186370819549}
   - component: {fileID: 4447844771491796573}
-  - component: {fileID: 7417958082128886718}
   - component: {fileID: 8434782255117133872}
   - component: {fileID: 6455946415771992526}
   - component: {fileID: 2430211157694140359}
@@ -221,30 +220,6 @@ MonoBehaviour:
   playerSprite: {fileID: 7627400860160224995}
   damageTag: EnemyProjectile
   invincible: 0
---- !u!114 &7417958082128886718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767793471138761913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenShots: 0.1
-  offsetX: 0
-  offsetY: 0
-  projectile: {fileID: 4800514412932659124, guid: 666ad9419f02a044b9ed6baf3e9ef314,
-    type: 3}
-  photonView: {fileID: 7686634051939010412}
-  shootingButton: Shoot3
-  projectileTag: PlayerProjectile
-  randomMin: 1
-  randomMax: 1
-  MAX_PROJECTILES: 20
-  automatic: 0
 --- !u!114 &8434782255117133872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +235,7 @@ MonoBehaviour:
   timeBetweenShots: 0.4
   offsetX: 0
   offsetY: 0
-  projectile: {fileID: 4800514412932659124, guid: 709177c89a15c954b8165704fbff4fa6,
+  projectile: {fileID: 4800514412932659124, guid: 666ad9419f02a044b9ed6baf3e9ef314,
     type: 3}
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot2

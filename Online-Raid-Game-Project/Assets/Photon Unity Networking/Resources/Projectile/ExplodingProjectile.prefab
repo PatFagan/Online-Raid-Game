@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 817502723832897451}
   - component: {fileID: 4800514412932659121}
   - component: {fileID: 4800514412932659126}
+  - component: {fileID: -2003898343267135169}
   - component: {fileID: 4800514412932659127}
-  - component: {fileID: 4800514412932659123}
   - component: {fileID: 16938679245497595}
   - component: {fileID: 7003797446899670566}
   m_Layer: 0
@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4800514412932659124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.65, y: -0.08, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -49,10 +49,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3951e3674842c5141b452326f0c6823a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileLifespan: 1
+  projectileLifespan: 7.1
   deathEffect: {fileID: 0}
-  targetTag:
-  - Wall
+  targetTag: []
   damage: 0
 --- !u!114 &4800514412932659121
 MonoBehaviour:
@@ -66,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8948b3452b6971f4dadfd31a9beb717c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileLifespan: 1
+  projectileLifespan: 7
   explosionShard: {fileID: 4800514412932659124, guid: 35544042ca5d044418b025b3c68d9f22,
     type: 3}
 --- !u!212 &4800514412932659126
@@ -121,6 +120,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2003898343267135169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800514412932659124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db38cd0131381045963922c91b6794d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart: 0
+  onCollision: 1
+  offsetX: 0
+  offsetY: 4
 --- !u!61 &4800514412932659127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,27 +162,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &4800514412932659123
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4800514412932659124}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 1
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &16938679245497595
 MonoBehaviour:
   m_ObjectHideFlags: 0
