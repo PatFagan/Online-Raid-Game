@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onStart: 0
   onCollision: 1
-  offsetX: 0
-  offsetY: 4
+  offsetX: 4
+  offsetY: 0
 --- !u!212 &7613782845429959406
 SpriteRenderer:
   m_ObjectHideFlags: 0

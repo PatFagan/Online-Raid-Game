@@ -17,8 +17,7 @@ public class SetToChildOfPlayer : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         if (onStart && player)
         {
-            transform.position = player.transform.position;
-            this.transform.parent = player.transform;
+            PickUp();
         }
     }
 
@@ -40,8 +39,7 @@ public class SetToChildOfPlayer : MonoBehaviour
             // if player collides with item, pick up
             if (collider.gameObject.tag == "Player")
             {
-                transform.position = player.transform.position + offset;
-                this.transform.parent = player.transform;
+                PickUp();
             }
         }
         // if another player shoots item, knock it off
@@ -51,8 +49,16 @@ public class SetToChildOfPlayer : MonoBehaviour
         }
     }
 
+    void PickUp()
+    {
+        // pick up
+        transform.position = player.transform.position + offset;
+        this.transform.parent = player.transform;
+    }
+
     IEnumerator DropItem()
     {
+        // drop
         onCollision = false;
         transform.parent = null;
         yield return new WaitForSeconds(1);
