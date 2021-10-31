@@ -12,8 +12,6 @@ public class PlayerHealth : Photon.MonoBehaviour
     Rigidbody2D enemyRigidbody;
     public string damageTag;
 
-    public bool invincible = false;
-
     float knockbackTimer; // times the duration of a knockback
 
     Player playerScript;
@@ -93,11 +91,12 @@ public class PlayerHealth : Photon.MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        // when hit by a player projectile, take damage
-        if (collider.gameObject.tag == damageTag) // if collides with water, slow down
+        // when hit by a damaging projectile, take damage
+        if (collider.gameObject.tag == damageTag)
         {
             DealDamage(collider.gameObject.GetComponent<Projectile>().damage);
             Knockback();
+            playerScript.invincibilityTimer = .5f;
         }
         if (health <= 0)
         {

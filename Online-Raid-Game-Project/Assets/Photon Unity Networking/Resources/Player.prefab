@@ -220,7 +220,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5217908197829339332}
   playerSprite: {fileID: 7627400860160224995}
   damageTag: EnemyProjectile
-  invincible: 0
 --- !u!114 &563751513511253828
 MonoBehaviour:
   m_ObjectHideFlags: 0
