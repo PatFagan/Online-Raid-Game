@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6778712052306533180}
   m_Layer: 0
   m_Name: ExplosionShard
-  m_TagString: PlayerProjectile
+  m_TagString: ShieldBreaker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,6 +69,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeedX: 5
   projectileSpeedY: 5
+  randMin: -10
+  randMax: 10
 --- !u!212 &4800514412932659126
 SpriteRenderer:
   m_ObjectHideFlags: 0

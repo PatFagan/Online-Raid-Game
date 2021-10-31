@@ -10,7 +10,6 @@ public class DestroyOnEscape : MonoBehaviour
     {
         if (collider.gameObject.tag == escapeTag)
         {
-            print("ESCAPE");
             Destroy(gameObject);
         }
     }

@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 5246084186370819549}
   - component: {fileID: 4447844771491796573}
   - component: {fileID: 563751513511253828}
+  - component: {fileID: 7082064724811261165}
   - component: {fileID: 8434782255117133872}
   - component: {fileID: 2430211157694140359}
   - component: {fileID: 7994381473820739771}
@@ -235,7 +236,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   offsetX: 0
   offsetY: 0
-  projectile: {fileID: 4800514412932659124, guid: d18c9fb93fb5d594b9b00421c3aa5aff,
+  projectile: {fileID: 4800514412932659124, guid: c8064dacb7437cb44827c1a7c2802668,
     type: 3}
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot
@@ -243,6 +244,29 @@ MonoBehaviour:
   randomMin: 1
   randomMax: 1
   MAX_PROJECTILES: 20
+  automatic: 0
+--- !u!114 &7082064724811261165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767793471138761913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1550e97417ff33d4c8f941bdf1b99e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenShots: 3
+  offsetX: 0
+  offsetY: 0
+  projectile: {fileID: 4800514412932659124, guid: 23656b0984b822746ac1a164e0defbdf,
+    type: 3}
+  shootingButton: Shoot3
+  projectileTag: GrapplingHook
+  randomMin: 1
+  randomMax: 1
+  MAX_PROJECTILES: 1
   automatic: 0
 --- !u!114 &8434782255117133872
 MonoBehaviour:

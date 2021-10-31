@@ -12,6 +12,7 @@ TagManager:
   - SafeZone
   - DecorativeProjectile
   - Bloodstream
+  - ShieldBreaker
   layers:
   - Default
   - TransparentFX
