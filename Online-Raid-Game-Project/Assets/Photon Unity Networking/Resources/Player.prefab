@@ -219,7 +219,9 @@ MonoBehaviour:
   deathEffect: {fileID: 0}
   spriteRenderer: {fileID: 5217908197829339332}
   playerSprite: {fileID: 7627400860160224995}
-  damageTag: EnemyProjectile
+  damageTag:
+  - Enemy
+  - EnemyProjectile
 --- !u!114 &563751513511253828
 MonoBehaviour:
   m_ObjectHideFlags: 0

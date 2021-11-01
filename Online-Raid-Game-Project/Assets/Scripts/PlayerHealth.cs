@@ -10,7 +10,9 @@ public class PlayerHealth : Photon.MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public GameObject playerSprite;
     Rigidbody2D enemyRigidbody;
-    public string damageTag;
+    const int NUM_OF_TAGS = 5;
+    public string[] damageTag = new string[NUM_OF_TAGS];
+    int i;
 
     float knockbackTimer; // times the duration of a knockback
 
@@ -92,19 +94,25 @@ public class PlayerHealth : Photon.MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         // when hit by a damaging projectile, take damage
-        if (collider.gameObject.tag == damageTag)
+        for (i = 0; i < damageTag.Length; i++)
         {
-            DealDamage(collider.gameObject.GetComponent<Projectile>().damage);
-            Knockback();
-            playerScript.invincibilityTimer = .5f;
-        }
-        if (health <= 0)
-        {
-            for (int i = 2; i < 7; i++)
+            if (collider.gameObject.tag == damageTag[i])
             {
-                if (collider.gameObject.name == "Player" + i) // if other player hits you, revive
+                if (collider.gameObject.GetComponent<Projectile>())
+                    DealDamage(collider.gameObject.GetComponent<Projectile>().damage);
+                else
+                    DealDamage(1);
+                Knockback();
+                playerScript.invincibilityTimer = .5f;
+            }
+            if (health <= 0)
+            {
+                for (int i = 2; i < 7; i++)
                 {
-                    RevivedByPlayer(collider);
+                    if (collider.gameObject.name == "Player" + i) // if other player hits you, revive
+                    {
+                        RevivedByPlayer(collider);
+                    }
                 }
             }
         }

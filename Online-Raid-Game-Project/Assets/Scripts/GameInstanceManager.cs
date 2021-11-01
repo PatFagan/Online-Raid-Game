@@ -9,6 +9,7 @@ public class GameInstanceManager : MonoBehaviour
     public GameObject gameCanvas;
     public GameObject sceneCamera;
     public TMP_Text pingText;
+    public GameObject playerSpawn;
 
     public GameObject disconnectUI;
     private bool isDisconnectUIoff = false;
@@ -53,10 +54,10 @@ public class GameInstanceManager : MonoBehaviour
     // spawns player and disables game canvas
     public void SpawnPlayer()
     {
-        float randomValue = Random.Range(-10f, 10f);
+        float randomValue = Random.Range(-5f, 5f);
 
         playerPrefab.SetActive(true);
-        PhotonNetwork.Instantiate(playerPrefab.name, new Vector2(this.transform.position.x * randomValue, this.transform.position.y), Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(playerPrefab.name, new Vector2(playerSpawn.transform.position.x + randomValue, playerSpawn.transform.position.y + randomValue), Quaternion.identity, 0);
         gameCanvas.SetActive(false);
         sceneCamera.SetActive(true);
     }
