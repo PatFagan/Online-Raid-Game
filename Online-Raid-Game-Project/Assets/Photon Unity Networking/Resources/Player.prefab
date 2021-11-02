@@ -281,10 +281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 0.4
+  timeBetweenShots: 0.2
   offsetX: 0
   offsetY: 0
-  projectile: {fileID: 4800514412932659124, guid: 666ad9419f02a044b9ed6baf3e9ef314,
+  projectile: {fileID: 4800514412932659124, guid: e6e3f0700b793164495537705022bebc,
     type: 3}
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot2
