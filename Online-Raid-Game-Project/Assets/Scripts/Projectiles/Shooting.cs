@@ -7,9 +7,8 @@ public class Shooting : Photon.MonoBehaviour
     public float timeBetweenShots, offsetX, offsetY;
     public GameObject projectile;
     public PhotonView photonView;
-    public string shootingButton, projectileTag;
+    public string shootingButton;
     public float randomMin = 1f, randomMax = 1f;
-    public int MAX_PROJECTILES;
     Vector3 bulletSpawnPos;
     float timer;
     public bool automatic = false;
@@ -30,8 +29,7 @@ public class Shooting : Photon.MonoBehaviour
 
             if (automatic == false)
             {
-                if (Input.GetButton(shootingButton) && timer >= timeBetweenShots
-                    && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
+                if (Input.GetButton(shootingButton) && timer >= timeBetweenShots)
                 {
                     PhotonNetwork.Instantiate("Projectile/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
                     timer = 0;
@@ -39,8 +37,7 @@ public class Shooting : Photon.MonoBehaviour
             }
             else if (automatic)
             {
-                if (timer >= timeBetweenShots
-                    && GameObject.FindGameObjectsWithTag(projectileTag).Length < MAX_PROJECTILES)
+                if (timer >= timeBetweenShots)
                 {
                     PhotonNetwork.Instantiate("Projectile/" + projectile.name, transform.position + (bulletSpawnPos * randomValue), Quaternion.identity, 0);
                     timer = 0;

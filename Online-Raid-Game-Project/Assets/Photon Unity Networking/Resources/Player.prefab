@@ -241,10 +241,8 @@ MonoBehaviour:
     type: 3}
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot
-  projectileTag: PlayerProjectile
   randomMin: 1
   randomMax: 1
-  MAX_PROJECTILES: 20
   automatic: 0
 --- !u!114 &7082064724811261165
 MonoBehaviour:
@@ -288,10 +286,8 @@ MonoBehaviour:
     type: 3}
   photonView: {fileID: 7686634051939010412}
   shootingButton: Shoot2
-  projectileTag: PlayerProjectile
   randomMin: 1
   randomMax: 1
-  MAX_PROJECTILES: 5
   automatic: 0
 --- !u!50 &2430211157694140359
 Rigidbody2D:
