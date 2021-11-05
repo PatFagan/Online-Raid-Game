@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : Photon.MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerHealth : Photon.MonoBehaviour
     const int NUM_OF_TAGS = 5;
     public string[] damageTag = new string[NUM_OF_TAGS];
     int i;
+    public Image healthBarImage;
 
     float knockbackTimer; // times the duration of a knockback
 
@@ -33,11 +35,12 @@ public class PlayerHealth : Photon.MonoBehaviour
 
     void Update()
     {
-        //print(health);
-        // enemy is dead
+        // update health bar
+        healthBarImage.fillAmount = health/10f;
+
+        // player is dead
         if (health <= 0)
         {
-            //Debug.Log("player death");
             StartCoroutine(PlayerDeath());
         }
 
