@@ -51,10 +51,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileLifespan: 2
   deathEffect: {fileID: 0}
-  targetTag:
-  - Player
+  destroyTag:
   - Wall
+  - Player
+  - 
+  - 
+  - 
   damage: 1
+  lifespan: 1
 --- !u!114 &-3173698838231102128
 MonoBehaviour:
   m_ObjectHideFlags: 0
