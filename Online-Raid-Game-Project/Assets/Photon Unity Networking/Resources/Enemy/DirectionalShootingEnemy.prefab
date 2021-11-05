@@ -68,15 +68,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 100
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8975096580288250508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.6666666, y: 1.6666666}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -143,8 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: b8981b4bfb73cfe4ebba7bfb5a74a6ce,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: edf4b30160b370a4da83159c165966f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -272,17 +271,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 0.3
+  timeBetweenShots: 1
   offsetX: 0
   offsetY: 0
   projectile: {fileID: 4800514412932659124, guid: 5d09b943e50d48645aacab8ce9d6074f,
     type: 3}
   photonView: {fileID: 6429587699551445431}
   shootingButton: 
-  projectileTag: EnemyProjectile
   randomMin: 1
   randomMax: 1
-  MAX_PROJECTILES: 10
   automatic: 1
 --- !u!114 &3866010284141390843
 MonoBehaviour:
@@ -296,17 +293,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 0.3
+  timeBetweenShots: 1
   offsetX: 0
   offsetY: 0
   projectile: {fileID: 4800514412932659124, guid: 735f8ebb7318fbb47a21ac1dce63f81a,
     type: 3}
   photonView: {fileID: 6429587699551445431}
   shootingButton: 
-  projectileTag: EnemyProjectile
   randomMin: 1
   randomMax: 1
-  MAX_PROJECTILES: 10
   automatic: 1
 --- !u!114 &2509940057501304444
 MonoBehaviour:
@@ -320,17 +315,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 0.3
+  timeBetweenShots: 1
   offsetX: 0
   offsetY: 0
   projectile: {fileID: 4800514412932659124, guid: 157358100d949b5498d19650c78f817f,
     type: 3}
   photonView: {fileID: 6429587699551445431}
   shootingButton: 
-  projectileTag: EnemyProjectile
   randomMin: 1
   randomMax: 1
-  MAX_PROJECTILES: 10
   automatic: 1
 --- !u!114 &-2161364366373391720
 MonoBehaviour:
@@ -344,15 +337,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec003b65b7f48014a853ed8f4b559ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 0.3
+  timeBetweenShots: 1
   offsetX: 0
   offsetY: 0
   projectile: {fileID: 4800514412932659124, guid: eedae1a0a0007974d8599f62b5cfb156,
     type: 3}
   photonView: {fileID: 6429587699551445431}
   shootingButton: 
-  projectileTag: EnemyProjectile
   randomMin: 1
   randomMax: 1
-  MAX_PROJECTILES: 10
   automatic: 1

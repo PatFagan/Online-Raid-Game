@@ -22,7 +22,7 @@ public class Player : Photon.MonoBehaviour
     public bool invincible;
     public float dodgeCooldown, dodgeForce;
 
-    public Vector3 movement;
+    public Vector3 movement, shootingDirection;
     int index;
 
     private void Awake()
@@ -54,6 +54,10 @@ public class Player : Photon.MonoBehaviour
             vertical = Input.GetAxis("Vertical");
             movement = new Vector3(horizontal, vertical, 0f);
             rigidbody.velocity = movement * moveSpeed;
+
+            // shooting direction
+            if (movement.x >= .3f || movement.y >= .3f || movement.x <= -.3f || movement.y <= -.3f)
+                shootingDirection = movement;
 
             // sprite flipping
             if (horizontal > 0)

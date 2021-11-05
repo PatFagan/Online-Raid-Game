@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6816626947216994393}
   - component: {fileID: 4759307322315503815}
   - component: {fileID: 3159373894137033673}
+  - component: {fileID: 847076332650149512}
   - component: {fileID: 180530822216697574}
   - component: {fileID: 3116471163201400607}
   - component: {fileID: 8975096580288250508}
@@ -69,6 +70,18 @@ MonoBehaviour:
   speed: 5
   targetTag: Player
   photonView: {fileID: 6429587699551445431}
+--- !u!114 &847076332650149512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2484825620673052758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cdfce0e3f9b54585f5ee68d070020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &180530822216697574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,8 +106,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 100
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -119,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.6666666, y: 1.6666666}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -168,8 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: b8981b4bfb73cfe4ebba7bfb5a74a6ce,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: f92c696064621de4d898cb7c250b51c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

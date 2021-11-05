@@ -13,6 +13,7 @@ TagManager:
   - DecorativeProjectile
   - Bloodstream
   - ShieldBreaker
+  - EnemySplitter
   layers:
   - Default
   - TransparentFX

@@ -15,11 +15,11 @@ C:/Users/patri/Documents/GitHub/Online-Raid-Game/Online-Raid-Game-Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55673
+56418
 Successfully changed project path to: C:/Users/patri/Documents/GitHub/Online-Raid-Game/Online-Raid-Game-Project
 C:/Users/patri/Documents/GitHub/Online-Raid-Game/Online-Raid-Game-Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 192.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 57.07 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path C:/Users/patri/Documents/Unity Secondary/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -27,100 +27,100 @@ Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics 630 (ID=0x3e9b)
+    Renderer: NVIDIA GeForce GTX 1050 Ti with Max-Q Design (ID=0x1c8c)
     Vendor:   
-    VRAM:     16242 MB
-    Driver:   27.20.100.9664
+    VRAM:     4021 MB
+    Driver:   27.21.14.6231
 Initialize mono
 Mono path[0] = 'C:/Users/patri/Documents/Unity Secondary/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/patri/Documents/Unity Secondary/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/patri/Documents/Unity Secondary/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/patri/Documents/Unity Secondary/2020.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Users/patri/Documents/Unity Secondary/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010009 seconds.
+Registered in 0.002421 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 165.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 52.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.246 seconds
+- Completed reload, in  0.992 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4247ms)
-		BeginReloadAssembly (242ms)
+	ReloadAssembly (992ms)
+		BeginReloadAssembly (50ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (1418ms)
-			LoadAssemblies (232ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (406ms)
+			LoadAssemblies (48ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (529ms)
+			SetupTypeCache (146ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (122ms)
-			SetupLoadedEditorAssemblies (554ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (166ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (166ms)
-				BeforeProcessingInitializeOnLoad (31ms)
-				ProcessInitializeOnLoadAttributes (238ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.028071 seconds.
+Registered in 0.005401 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 251.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.133 seconds
+- Completed reload, in  1.117 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4135ms)
-		BeginReloadAssembly (459ms)
+	ReloadAssembly (1118ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (3473ms)
-			LoadAssemblies (328ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (924ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1079ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (175ms)
-			SetupLoadedEditorAssemblies (1575ms)
+			SetupTypeCache (315ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (353ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (251ms)
-				BeforeProcessingInitializeOnLoad (362ms)
-				ProcessInitializeOnLoadAttributes (917ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (1ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
-Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3091 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3092 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 143.7 MB.
 System memory in use after: 143.9 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3533.
-Total: 7.196100 ms (FindLiveObjects: 0.427500 ms CreateObjectMapping: 0.222600 ms MarkObjects: 6.320700 ms  DeleteObjects: 0.224000 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3534.
+Total: 3.544500 ms (FindLiveObjects: 0.284100 ms CreateObjectMapping: 0.124600 ms MarkObjects: 3.057600 ms  DeleteObjects: 0.077300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -135,1217 +135,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd330e3f3d246fd6a0b189d0b1fce9a4') in 0.769166 seconds 
-  Import took 0.782378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000477 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad0b1622268f6240bd7544575ccf791') in 0.034552 seconds 
-  Import took 0.050835 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.982046 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '854c7fc19ab6fb0d6251d63fbb87a34c') in 0.052643 seconds 
-  Import took 0.070819 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.934770 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18fdbccec79fb424b000156fff690de8') in 0.056640 seconds 
-  Import took 0.077767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.295698 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06bd1c4fd0b46c7162a79f72388b9039') in 0.048537 seconds 
-  Import took 0.069199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.026468 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f750475b929ee5be4f4f651cdde8da69') in 0.040198 seconds 
-  Import took 0.056915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.045244 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b214d93224886b8311be3dab3ddeefa') in 0.066601 seconds 
-  Import took 0.091290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.318181 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d850bd9dc268e38874cb62d4c774e16') in 0.068843 seconds 
-  Import took 0.086537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.417483 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3aea2a5bf1e877ff5e9a3d108cc11d') in 0.060682 seconds 
-  Import took 0.079092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.345095 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c6ef94ffd52359d00a5cfb91f13dad') in 0.068758 seconds 
-  Import took 0.086031 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.078670 seconds.
-  path: Assets/Photon Unity Networking/Resources/Player.prefab
-  artifactKey: Guid(1db5d82bfa3991d46a26b772d772413e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Player.prefab using Guid(1db5d82bfa3991d46a26b772d772413e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffea405448a1ddf7177bc30fd3f3da43') in 0.232598 seconds 
-  Import took 0.249318 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.046671 seconds.
-  path: Assets/Photon Unity Networking/Resources/Player.prefab
-  artifactKey: Guid(1db5d82bfa3991d46a26b772d772413e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Player.prefab using Guid(1db5d82bfa3991d46a26b772d772413e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff587001c08aee70ed4c95c69eb82a3') in 0.101513 seconds 
-  Import took 0.121636 seconds .
+  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
+  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb791e77d26a803b79bfc201538087fd') in 0.273746 seconds 
+  Import took 0.278309 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.016719 seconds.
+Registered in 0.005485 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.599 seconds
+- Completed reload, in  1.082 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3601ms)
-		BeginReloadAssembly (495ms)
+	ReloadAssembly (1083ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (30ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (143ms)
-		EndReloadAssembly (2874ms)
-			LoadAssemblies (370ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (895ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (947ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (205ms)
-			SetupLoadedEditorAssemblies (996ms)
+			SetupTypeCache (323ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (304ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (330ms)
-				ProcessInitializeOnLoadAttributes (603ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (25ms)
-				EditorAssembliesLoaded (1ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (48ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2966 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 140.3 MB.
 System memory in use after: 140.5 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3580.
-Total: 5.483400 ms (FindLiveObjects: 0.321800 ms CreateObjectMapping: 0.142800 ms MarkObjects: 4.981500 ms  DeleteObjects: 0.036000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 58.561158 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab
-  artifactKey: Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile.prefab using Guid(e6e3f0700b793164495537705022bebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79de2d4d8dcdb770ff397745bd1aa559') in 0.625680 seconds 
-  Import took 0.641614 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.019178 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.075 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4076ms)
-		BeginReloadAssembly (359ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (17ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (113ms)
-		EndReloadAssembly (3535ms)
-			LoadAssemblies (299ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1087ms)
-			ReleaseScriptCaches (6ms)
-			RebuildScriptCaches (220ms)
-			SetupLoadedEditorAssemblies (1394ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (435ms)
-				ProcessInitializeOnLoadAttributes (889ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (30ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (59ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2966 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.4 MB.
-System memory in use after: 140.7 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3618.
-Total: 7.588500 ms (FindLiveObjects: 0.518800 ms CreateObjectMapping: 0.310900 ms MarkObjects: 6.712700 ms  DeleteObjects: 0.043500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 597.069003 seconds.
-  path: Assets/Scripts/Projectiles/DirectionalProjectile.cs
-  artifactKey: Guid(af998afb216ca1e47aede8c11023b168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Projectiles/DirectionalProjectile.cs using Guid(af998afb216ca1e47aede8c11023b168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae984968be5a3a526e644fec3faa388c') in 0.041943 seconds 
-  Import took 0.052812 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007917 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.713 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3715ms)
-		BeginReloadAssembly (386ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (132ms)
-		EndReloadAssembly (3115ms)
-			LoadAssemblies (290ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1004ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (182ms)
-			SetupLoadedEditorAssemblies (1183ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (347ms)
-				ProcessInitializeOnLoadAttributes (778ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (24ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (51ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.7 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3621.
-Total: 4.162200 ms (FindLiveObjects: 0.318000 ms CreateObjectMapping: 0.164400 ms MarkObjects: 3.651300 ms  DeleteObjects: 0.027000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007940 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.158 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3159ms)
-		BeginReloadAssembly (398ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (21ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (125ms)
-		EndReloadAssembly (2564ms)
-			LoadAssemblies (322ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1001ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (939ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (331ms)
-				ProcessInitializeOnLoadAttributes (556ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (21ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (50ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.5 MB.
-System memory in use after: 140.7 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3623.
-Total: 5.222200 ms (FindLiveObjects: 0.570700 ms CreateObjectMapping: 0.222700 ms MarkObjects: 4.403500 ms  DeleteObjects: 0.023500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 157.111041 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile 1.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/MeleeProjectile 1.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24fcf44543257c9ab504408e4437b5d') in 0.490260 seconds 
-  Import took 0.503881 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.303216 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f68f47f693c4c7ba9797176ec02cab') in 0.032224 seconds 
-  Import took 0.043493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.113739 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f68f47f693c4c7ba9797176ec02cab') in 0.045648 seconds 
-  Import took 0.068002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.604225 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3bfd903399f7537b4672c9e75ff233') in 0.036021 seconds 
-  Import took 0.046251 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.102070 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3bfd903399f7537b4672c9e75ff233') in 0.026532 seconds 
-  Import took 0.039354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.728881 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2867e4220fdacba6538860882d1195') in 0.037947 seconds 
-  Import took 0.051006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.116028 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2867e4220fdacba6538860882d1195') in 0.052390 seconds 
-  Import took 0.078255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.122233 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02dafcb6ca6a900f096bef9cbb6396c') in 0.056681 seconds 
-  Import took 0.076839 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.105748 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02dafcb6ca6a900f096bef9cbb6396c') in 0.043749 seconds 
-  Import took 0.062149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.489280 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f416deb9befc78180b0dc96608655040') in 0.042318 seconds 
-  Import took 0.063782 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.121779 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f416deb9befc78180b0dc96608655040') in 0.043254 seconds 
-  Import took 0.063200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.370586 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfb303cbc1a3323c13627ffa46cc7439') in 0.018459 seconds 
-  Import took 0.027359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.120908 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7ba04584b24966db80241d21439b58') in 0.037500 seconds 
-  Import took 0.051313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.133065 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7ba04584b24966db80241d21439b58') in 0.045420 seconds 
-  Import took 0.070478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.692470 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a60421d6030cb0992c3a18461292c03') in 0.027491 seconds 
-  Import took 0.035360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.130553 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a60421d6030cb0992c3a18461292c03') in 0.042951 seconds 
-  Import took 0.064370 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.669693 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e782daff85d13edaf1dfeff2f209b2') in 0.022135 seconds 
-  Import took 0.029198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.127999 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e782daff85d13edaf1dfeff2f209b2') in 0.043408 seconds 
-  Import took 0.065110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.804066 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09d275f9d899ede91ba460119b26240') in 0.039950 seconds 
-  Import took 0.053270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.111332 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09d275f9d899ede91ba460119b26240') in 0.041079 seconds 
-  Import took 0.063548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.097988 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97811f823d617b8aa239c83872385524') in 0.030494 seconds 
-  Import took 0.041548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.114889 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97811f823d617b8aa239c83872385524') in 0.039779 seconds 
-  Import took 0.061794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.189777 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2829c16192277833abafdbddd9403b73') in 0.037854 seconds 
-  Import took 0.050381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.109230 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2829c16192277833abafdbddd9403b73') in 0.037806 seconds 
-  Import took 0.056003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.783247 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64ce8e13ae3614c43d5c9dd0d93b6ff') in 0.043482 seconds 
-  Import took 0.061788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.115566 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64ce8e13ae3614c43d5c9dd0d93b6ff') in 0.046336 seconds 
-  Import took 0.071017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.162324 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cd64e008c363b79cd60116f6eb7ecc') in 0.027632 seconds 
-  Import took 0.042958 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.119249 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cd64e008c363b79cd60116f6eb7ecc') in 0.040218 seconds 
-  Import took 0.059317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.870543 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366081895495bb5a6d1a850f74e15434') in 0.027830 seconds 
-  Import took 0.040471 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.127545 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366081895495bb5a6d1a850f74e15434') in 0.044439 seconds 
-  Import took 0.064977 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.913554 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e437ae7e234733eeac3d51ae85f29b') in 0.043719 seconds 
-  Import took 0.063374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.121457 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e437ae7e234733eeac3d51ae85f29b') in 0.043929 seconds 
-  Import took 0.064983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.813921 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/ShootingEnemy 1.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/ShootingEnemy 1.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862b910cfe2b7d20f1285ce2293a8e31') in 0.047126 seconds 
-  Import took 0.062649 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.121505 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/ShootingEnemy 1.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/ShootingEnemy 1.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862b910cfe2b7d20f1285ce2293a8e31') in 0.046581 seconds 
-  Import took 0.066771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.235793 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e797298d8dd120c91e926d33d4054ef5') in 0.042279 seconds 
-  Import took 0.055657 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.112508 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e797298d8dd120c91e926d33d4054ef5') in 0.044989 seconds 
-  Import took 0.066606 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.496500 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '111dd7e8ea85cde5f3d96987d93eea47') in 0.040901 seconds 
-  Import took 0.054797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.108699 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '111dd7e8ea85cde5f3d96987d93eea47') in 0.047240 seconds 
-  Import took 0.068867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.777739 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02454304f2ad92c23690c92ede685816') in 0.052802 seconds 
-  Import took 0.068927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.109448 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02454304f2ad92c23690c92ede685816') in 0.043976 seconds 
-  Import took 0.063671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.723135 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abac09221a55918b9f65dd67e11616aa') in 0.024981 seconds 
-  Import took 0.035862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.774936 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270e456929635780620ef24c5f1bce83') in 0.031187 seconds 
-  Import took 0.044030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.598266 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb41ca0655e73fdd920e720fb2375e7') in 0.044240 seconds 
-  Import took 0.064618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.964674 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2c72bd3524bc5707bd527b49dc99f8') in 0.041479 seconds 
-  Import took 0.061839 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.117540 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a061ecb25200579d473ee1dbe878daa2') in 0.019644 seconds 
-  Import took 0.029473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.589465 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a79b0f2a506c454cc7481659ef5044') in 0.022284 seconds 
-  Import took 0.032648 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.090678 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a92d4acc2e3d9f9e945e1e22f390027') in 0.028593 seconds 
-  Import took 0.042993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.041324 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ad07348073b9d0adbbae5da70bb8eb') in 0.031613 seconds 
-  Import took 0.044550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.341996 seconds.
-  path: Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab
-  artifactKey: Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Enemy/DirectionalShootingEnemy.prefab using Guid(fcafa70ffc3cf0f4882c213149852273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3099e5148c14c4943d4e8b2575a16f') in 0.025802 seconds 
-  Import took 0.037987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.707127 seconds.
-  path: Assets/Scenes/MainGame.unity
-  artifactKey: Guid(ef3f8c67f4f775945ac14ba50d5e7cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainGame.unity using Guid(ef3f8c67f4f775945ac14ba50d5e7cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56bc91ad3eed858f69ce2326a59eaf6') in 0.032138 seconds 
-  Import took 0.056038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 60.927389 seconds.
-  path: Assets/Scenes/MainGame.unity
-  artifactKey: Guid(ef3f8c67f4f775945ac14ba50d5e7cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainGame.unity using Guid(ef3f8c67f4f775945ac14ba50d5e7cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed926629427a75b524990315cd8d6d7') in 0.012759 seconds 
-  Import took 0.034312 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002115 seconds.
-  path: Assets/Scenes/MainGame.unity
-  artifactKey: Guid(ef3f8c67f4f775945ac14ba50d5e7cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainGame.unity using Guid(ef3f8c67f4f775945ac14ba50d5e7cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed926629427a75b524990315cd8d6d7') in 0.011554 seconds 
-  Import took 0.029065 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010132 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.799 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1800ms)
-		BeginReloadAssembly (168ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1516ms)
-			LoadAssemblies (136ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (450ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (644ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (232ms)
-				ProcessInitializeOnLoadAttributes (364ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.7 MB.
-System memory in use after: 140.9 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3661.
-Total: 5.345500 ms (FindLiveObjects: 0.554200 ms CreateObjectMapping: 0.223900 ms MarkObjects: 4.540000 ms  DeleteObjects: 0.025900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.019888 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.143 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4144ms)
-		BeginReloadAssembly (411ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (17ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (120ms)
-		EndReloadAssembly (3424ms)
-			LoadAssemblies (378ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1211ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (271ms)
-			SetupLoadedEditorAssemblies (1073ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (372ms)
-				ProcessInitializeOnLoadAttributes (640ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (26ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (47ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.92 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.7 MB.
-System memory in use after: 140.9 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3663.
-Total: 4.982600 ms (FindLiveObjects: 0.347700 ms CreateObjectMapping: 0.155000 ms MarkObjects: 4.448600 ms  DeleteObjects: 0.030100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 60.571913 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a3a6c0f243bd433c80b3c77ef2d994') in 0.453368 seconds 
-  Import took 0.467543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.236330 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7de1f1b24ae847403f5e3f0579cbbaa') in 0.020335 seconds 
-  Import took 0.030578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000550 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9116f9e850c99d77ded669ccb6377405') in 0.025785 seconds 
-  Import took 0.037426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000503 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8421fc65f04a82c0d2cfdb1a5742bd0') in 0.028419 seconds 
-  Import took 0.041238 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.021007 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.275 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3275ms)
-		BeginReloadAssembly (325ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (20ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (98ms)
-		EndReloadAssembly (2737ms)
-			LoadAssemblies (290ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1139ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (144ms)
-			SetupLoadedEditorAssemblies (811ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (313ms)
-				ProcessInitializeOnLoadAttributes (456ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (35ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.8 MB.
-System memory in use after: 141.0 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3701.
-Total: 5.610100 ms (FindLiveObjects: 0.467200 ms CreateObjectMapping: 0.224100 ms MarkObjects: 4.890200 ms  DeleteObjects: 0.027000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 76.078057 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d088bbe00e964adce3e57d75ef5fb63') in 0.398141 seconds 
-  Import took 0.408764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000572 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9889ba8b6dc3f22d66cd99a2973566f') in 0.025791 seconds 
-  Import took 0.042123 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000557 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da894dac471e3fe02ea643f24a934575') in 0.027297 seconds 
-  Import took 0.042205 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000586 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410519f9180a764ab894f7bda705a52a') in 0.034820 seconds 
-  Import took 0.049279 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011836 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da894dac471e3fe02ea643f24a934575') in 0.041413 seconds 
-  Import took 0.062100 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.446907 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe59f01a476804ed3d2aeb604c455ebc') in 0.028829 seconds 
-  Import took 0.039689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.087187 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe59f01a476804ed3d2aeb604c455ebc') in 0.040545 seconds 
-  Import took 0.059969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.306222 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea3f7b81dad401b56a591b2332116b4') in 0.041649 seconds 
-  Import took 0.058743 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.053969 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea3f7b81dad401b56a591b2332116b4') in 0.040655 seconds 
-  Import took 0.059250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.604139 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef30865a21f50ead0bc700d0659f730') in 0.032681 seconds 
-  Import took 0.047644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.074582 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef30865a21f50ead0bc700d0659f730') in 0.044364 seconds 
-  Import took 0.065453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.054059 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59435761e0d249a1f33a3d79b562c10') in 0.026359 seconds 
-  Import took 0.037842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.069083 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59435761e0d249a1f33a3d79b562c10') in 0.036602 seconds 
-  Import took 0.056691 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018674 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.881 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3882ms)
-		BeginReloadAssembly (305ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (127ms)
-		EndReloadAssembly (3369ms)
-			LoadAssemblies (255ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (923ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (193ms)
-			SetupLoadedEditorAssemblies (1349ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (518ms)
-				ProcessInitializeOnLoadAttributes (771ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (52ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.94 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.0 MB.
-System memory in use after: 141.2 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3739.
-Total: 7.190100 ms (FindLiveObjects: 0.360400 ms CreateObjectMapping: 0.163800 ms MarkObjects: 6.613700 ms  DeleteObjects: 0.050300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 68.278521 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab
-  artifactKey: Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/UpDirectionalProjectile 1.prefab using Guid(5d09b943e50d48645aacab8ce9d6074f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e02dafc2e0046261d9a462f1e02d45a9') in 0.437698 seconds 
-  Import took 0.451755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000725 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab
-  artifactKey: Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/DownDirectionalProjectile 2.prefab using Guid(735f8ebb7318fbb47a21ac1dce63f81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f311320e13c829a153a577c5e0da401') in 0.039306 seconds 
-  Import took 0.057248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000607 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de315865011a204fe83648de36b0a8d8') in 0.025689 seconds 
-  Import took 0.038813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000559 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab
-  artifactKey: Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/LeftDirectionalProjectile 3.prefab using Guid(157358100d949b5498d19650c78f817f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e142e5574e6127cfb266da87197e6c69') in 0.025276 seconds 
-  Import took 0.038956 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.069652 seconds.
-  path: Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab
-  artifactKey: Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon Unity Networking/Resources/Projectile/RightDirectionalProjectile.prefab using Guid(eedae1a0a0007974d8599f62b5cfb156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de315865011a204fe83648de36b0a8d8') in 0.042607 seconds 
-  Import took 0.066160 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.019546 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.000 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4001ms)
-		BeginReloadAssembly (343ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (22ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (96ms)
-		EndReloadAssembly (3387ms)
-			LoadAssemblies (320ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1259ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (249ms)
-			SetupLoadedEditorAssemblies (1077ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (337ms)
-				ProcessInitializeOnLoadAttributes (679ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (26ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (65ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2967 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.1 MB.
-System memory in use after: 141.3 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3777.
-Total: 8.243400 ms (FindLiveObjects: 0.587800 ms CreateObjectMapping: 0.366100 ms MarkObjects: 7.243200 ms  DeleteObjects: 0.044300 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3581.
+Total: 3.683500 ms (FindLiveObjects: 0.276000 ms CreateObjectMapping: 0.112700 ms MarkObjects: 3.277200 ms  DeleteObjects: 0.016800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

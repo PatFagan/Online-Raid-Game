@@ -19,6 +19,6 @@ public class AimedProjectile : Photon.MonoBehaviour
 
         // set direction/speed
         rigidbody = GetComponent<Rigidbody2D>();
-        rigidbody.velocity = playerScript.movement * speed;
+        rigidbody.velocity = playerScript.shootingDirection * speed;
     }
 }
