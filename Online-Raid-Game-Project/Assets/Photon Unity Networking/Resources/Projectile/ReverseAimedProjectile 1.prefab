@@ -57,7 +57,7 @@ MonoBehaviour:
   - 
   - 
   - 
-  damage: 3
+  damage: 1
   lifespan: 1
 --- !u!114 &-4361988350491621441
 MonoBehaviour:

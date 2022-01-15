@@ -48,7 +48,7 @@ MonoBehaviour:
   health: 50
   knockbackForce: 0
   deathEffect: {fileID: 0}
-  damageTag: EnemyProjectile
+  damageTag: PlayerProjectile
 --- !u!212 &8505443964523404814
 SpriteRenderer:
   m_ObjectHideFlags: 0
