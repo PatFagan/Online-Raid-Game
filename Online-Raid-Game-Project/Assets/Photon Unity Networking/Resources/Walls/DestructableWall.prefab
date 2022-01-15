@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b8ca5fc39412147b6ee22a33ff60a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 10
   knockbackForce: 0
   deathEffect: {fileID: 0}
   damageTag: PlayerProjectile
