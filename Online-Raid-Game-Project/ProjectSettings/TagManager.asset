@@ -15,6 +15,7 @@ TagManager:
   - ShieldBreaker
   - EnemySplitter
   - BombHolderEnemy
+  - DestructableWall
   layers:
   - Default
   - TransparentFX

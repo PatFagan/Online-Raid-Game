@@ -15,6 +15,7 @@ public class PlayerHealth : Photon.MonoBehaviour
     public string[] damageTag = new string[NUM_OF_TAGS];
     int i;
     public Image healthBarImage;
+    bool deathTextShown = false;
 
     float knockbackTimer; // times the duration of a knockback
 
@@ -41,7 +42,8 @@ public class PlayerHealth : Photon.MonoBehaviour
         // player is dead
         if (health <= 0)
         {
-            StartCoroutine(PlayerDeath());
+            if (deathTextShown == false)
+                StartCoroutine(PlayerDeath());
         }
 
         // stunned
@@ -123,16 +125,14 @@ public class PlayerHealth : Photon.MonoBehaviour
 
     IEnumerator PlayerDeath()
     {
-        bool textDisplayed = false;
-
+        deathTextShown = true;
         playerScript.moveSpeed = 0f; // stop movement
         playerSprite.transform.Rotate(0f, 0f, 5f, Space.Self); // rotate
         // output to reviver feed
-        if (textDisplayed == false)
-            gameManagerScript.DeathFeed(gameObject.GetComponent<PhotonView>().owner.NickName);
-        textDisplayed = true;
+        gameManagerScript.DeathFeed(gameObject.GetComponent<PhotonView>().owner.NickName);
         yield return new WaitForSeconds(5); // wait
         Revive();
+        deathTextShown = false;
     }
 
     void RevivedByPlayer(Collider2D Reviver)

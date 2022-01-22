@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
     float timer;
     public string tagOfSpawnedObject, folder;
 
-    public int MAX_SPAWN_OBJECTS = 10;
+    public int MAX_SPAWN_OBJECTS;
     public bool spawnLimit;
 
     void Start()
@@ -19,15 +19,15 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime; // timer
+        if (GameObject.FindGameObjectsWithTag(tagOfSpawnedObject).Length < MAX_SPAWN_OBJECTS)
+        {
+            timer += Time.deltaTime; // timer
+        }
 
         if (timer >= spawnTime)
         {
-            if (spawnLimit == false || (GameObject.FindGameObjectsWithTag(tagOfSpawnedObject).Length < MAX_SPAWN_OBJECTS))
-            {
-                PhotonNetwork.Instantiate(folder + "/" + spawnObject.name, transform.position, Quaternion.identity, 0);
-                timer = 0;
-            }
+            PhotonNetwork.Instantiate(folder + "/" + spawnObject.name, transform.position, Quaternion.identity, 0);
+            timer = 0;
         }
     }
 }

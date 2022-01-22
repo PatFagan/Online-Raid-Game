@@ -25,7 +25,7 @@ public class TakeDamage : Photon.MonoBehaviour
         if (health <= 0)
         {
             if (deathEffect) { PhotonNetwork.Instantiate("Drops/" + deathEffect.name, transform.position, Quaternion.identity, 0); }
-            Destroy(gameObject);
+            PhotonNetwork.Destroy(gameObject);
 
             //powerUpScript.SpawnPowerUp(transform.position);
         }
