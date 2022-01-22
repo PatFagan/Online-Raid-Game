@@ -15,7 +15,7 @@ public class Projectile : Photon.MonoBehaviour
     void Start()
     {
         if (lifespan)
-            Destroy(gameObject, projectileLifespan); // destroy after lifespan expires
+            StartCoroutine(DestroyAtLifespan());
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -26,12 +26,19 @@ public class Projectile : Photon.MonoBehaviour
             if (collider.gameObject.tag == destroyTag[i])
             {
                 if (deathEffect) { Instantiate(deathEffect, transform.position, Quaternion.identity); }
-                Destroy(gameObject);
+                PhotonNetwork.Destroy(gameObject);
             }
             if (collider.gameObject.tag == "SafeZone") // if collides with water, slow down
             {
-                Destroy(gameObject);
+                PhotonNetwork.Destroy(gameObject);
             }
         }
+    }
+
+    IEnumerator DestroyAtLifespan()
+    {
+        yield return new WaitForSeconds(projectileLifespan);
+        PhotonNetwork.Destroy(gameObject); // destroy after lifespan expires
+
     }
 }

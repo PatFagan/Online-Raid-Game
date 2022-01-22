@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a449505e395129c43ad9799c826c186d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photonView: {fileID: 16938679245497595}
   deathEffect: {fileID: 0}
   speed: 50
 --- !u!212 &4800514412932659126
@@ -188,7 +189,7 @@ MonoBehaviour:
   group: 0
   OwnerShipWasTransfered: 0
   prefixBackup: -1
-  synchronization: 3
+  synchronization: 1
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
