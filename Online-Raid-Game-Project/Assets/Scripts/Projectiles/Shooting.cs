@@ -8,7 +8,7 @@ public class Shooting : Photon.MonoBehaviour
     public GameObject projectile;
     public PhotonView photonView;
     public string shootingButton;
-    public float randomMin = 1f, randomMax = 1f;
+    public float randomMin, randomMax;
     Vector3 bulletSpawnPos;
     float timer;
     public bool automatic = false;
