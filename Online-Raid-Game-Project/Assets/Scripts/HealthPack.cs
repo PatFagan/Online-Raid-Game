@@ -7,18 +7,15 @@ public class HealthPack : MonoBehaviour
     PlayerHealth playerHealthScript;
     float playerHealth, maxHealth;
     public float healValue;
-    void Start()
-    {
-        playerHealthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-        maxHealth = playerHealthScript.baseHealth;
-    }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         // grab health pack, heal
         if (collider.gameObject.tag == "Player")
         {
-            playerHealthScript.health += healValue;
+            playerHealthScript = collider.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealthScript.health < playerHealthScript.baseHealth)
+                playerHealthScript.health += healValue;
             Destroy(gameObject);
         }
     }

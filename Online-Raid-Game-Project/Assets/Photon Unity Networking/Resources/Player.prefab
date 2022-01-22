@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 278771020723418150}
   - component: {fileID: 2443661954643550075}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -874,6 +874,6 @@ MonoBehaviour:
     InterpolateLerpSpeed: 5
   m_ScaleModel:
     SynchronizeEnabled: 1
-    InterpolateOption: 0
+    InterpolateOption: 2
     InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 0
+    InterpolateLerpSpeed: 4

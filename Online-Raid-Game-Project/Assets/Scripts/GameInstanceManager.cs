@@ -85,4 +85,12 @@ public class GameInstanceManager : MonoBehaviour
         feedLine.GetComponent<TMP_Text>().text = reviver + " revived " + revivee;
         feedLine.GetComponent<TMP_Text>().color = Color.yellow;
     }
+
+    public void DeathFeed(string deadPlayer)
+    {
+        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
+        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
+        feedLine.GetComponent<TMP_Text>().text = deadPlayer + " has died";
+        feedLine.GetComponent<TMP_Text>().color = Color.red;
+    }
 }

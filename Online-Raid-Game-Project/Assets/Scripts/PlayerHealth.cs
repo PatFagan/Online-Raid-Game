@@ -123,8 +123,14 @@ public class PlayerHealth : Photon.MonoBehaviour
 
     IEnumerator PlayerDeath()
     {
+        bool textDisplayed = false;
+
         playerScript.moveSpeed = 0f; // stop movement
         playerSprite.transform.Rotate(0f, 0f, 5f, Space.Self); // rotate
+        // output to reviver feed
+        if (textDisplayed == false)
+            gameManagerScript.DeathFeed(gameObject.GetComponent<PhotonView>().owner.NickName);
+        textDisplayed = true;
         yield return new WaitForSeconds(5); // wait
         Revive();
     }
