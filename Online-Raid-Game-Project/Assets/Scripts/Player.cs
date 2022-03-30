@@ -23,25 +23,12 @@ public class Player : Photon.MonoBehaviour
     public float dodgeCooldown, dodgeForce;
 
     public Vector3 movement, shootingDirection;
-    int index;
 
     private void Awake()
     {
-        index = 1;
         if (photonView.isMine)
         {
-            //playerCamera.SetActive(true); // activate your camera
-            username.text = PhotonNetwork.playerName; // set your username
-            username.color = Color.yellow; // username color
             invincible = false;
-            gameObject.name = "Player1";
-        }
-        else
-        {
-            username.text = photonView.owner.NickName; // set other players' usernames
-            username.color = Color.cyan; // username color
-            index++;
-            gameObject.name = "Player" + index;
         }
     }
 
@@ -59,12 +46,6 @@ public class Player : Photon.MonoBehaviour
             if (movement.x >= .3f || movement.y >= .3f || movement.x <= -.3f || movement.y <= -.3f)
                 shootingDirection = movement;
 
-            // sprite flipping
-            if (horizontal > 0)
-                photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
-            else if (horizontal < 0)
-                photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
-
             // dodge
             dodgeTimer += Time.deltaTime; // dodge cooldown timer
             invincibilityTimer -= Time.deltaTime;
@@ -80,19 +61,6 @@ public class Player : Photon.MonoBehaviour
             else
                 invincible = false;
         }
-    }
-
-    // sprite flipping
-    [PunRPC]
-    private void FlipTrue()
-    {
-        spriteRenderer.flipX = true;
-    }
-
-    [PunRPC]
-    private void FlipFalse()
-    {
-        spriteRenderer.flipX = false;
     }
 
     // safe zone triggers

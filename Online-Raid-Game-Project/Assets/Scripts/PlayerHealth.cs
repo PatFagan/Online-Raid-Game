@@ -128,8 +128,6 @@ public class PlayerHealth : Photon.MonoBehaviour
         deathTextShown = true;
         playerScript.moveSpeed = 0f; // stop movement
         playerSprite.transform.Rotate(0f, 0f, 5f, Space.Self); // rotate
-        // output to reviver feed
-        gameManagerScript.DeathFeed(gameObject.GetComponent<PhotonView>().owner.NickName);
         yield return new WaitForSeconds(5); // wait
         Revive();
         deathTextShown = false;
@@ -140,9 +138,6 @@ public class PlayerHealth : Photon.MonoBehaviour
         playerSprite.transform.rotation = Quaternion.identity; // reset rotation
         health = baseHealth; // refill health
         playerScript.moveSpeed = baseSpeed; // set speed back to normal
-        // output to reviver feed
-        gameManagerScript.ReviveFeed(Reviver.GetComponent<PhotonView>().owner.NickName, 
-            gameObject.GetComponent<PhotonView>().owner.NickName);
     }
 
     void Revive()

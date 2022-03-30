@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
     public void JoinGame()
     {
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 1;
+        roomOptions.MaxPlayers = 3; // maybe add a thing where if the player amount is exceeded, then universallobby gets a number tacked on
         PhotonNetwork.JoinOrCreateRoom("universallobby", roomOptions, TypedLobby.Default);
     }
 

@@ -13,9 +13,6 @@ public class GameInstanceManager : MonoBehaviour
     public GameObject disconnectUI;
     private bool isDisconnectUIoff = false;
 
-    public GameObject playerFeed;
-    public GameObject feedGrid;
-
     void Start()
     {
         SpawnPlayer();
@@ -53,39 +50,7 @@ public class GameInstanceManager : MonoBehaviour
     public void SpawnPlayer()
     {
         playerPrefab.SetActive(true);
-        PhotonNetwork.Instantiate(playerPrefab.name, new Vector2(playerSpawn.transform.position.x, playerSpawn.transform.position.y), Quaternion.identity, 0);
+        Instantiate(playerPrefab, new Vector2(playerSpawn.transform.position.x, playerSpawn.transform.position.y), Quaternion.identity);
         sceneCamera.SetActive(true);
-    }
-
-    private void OnPhotonPlayerConnected(PhotonPlayer player)
-    {
-        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
-        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
-        feedLine.GetComponent<TMP_Text>().text = player.NickName + " joined the game"; // set text
-        feedLine.GetComponent<TMP_Text>().color = Color.green; // set text color
-    }
-
-    private void OnPhotonPlayerDisconnected(PhotonPlayer player)
-    {
-        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
-        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
-        feedLine.GetComponent<TMP_Text>().text = player.NickName + " left the game";
-        feedLine.GetComponent<TMP_Text>().color = Color.red;
-    }
-
-    public void ReviveFeed(string reviver, string revivee)
-    {
-        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
-        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
-        feedLine.GetComponent<TMP_Text>().text = reviver + " revived " + revivee;
-        feedLine.GetComponent<TMP_Text>().color = Color.yellow;
-    }
-
-    public void DeathFeed(string deadPlayer)
-    {
-        GameObject feedLine = PhotonNetwork.Instantiate(playerFeed.name, new Vector2(0, 0), Quaternion.identity, 0); // create text line
-        feedLine.transform.SetParent(feedGrid.transform, false); // make text line child of feed grid
-        feedLine.GetComponent<TMP_Text>().text = deadPlayer + " has died";
-        feedLine.GetComponent<TMP_Text>().color = Color.red;
     }
 }
