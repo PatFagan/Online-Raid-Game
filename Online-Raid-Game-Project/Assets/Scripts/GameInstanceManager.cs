@@ -6,7 +6,6 @@ using TMPro;
 public class GameInstanceManager : MonoBehaviour
 {
     public GameObject playerPrefab;
-    public GameObject gameCanvas;
     public GameObject sceneCamera;
     public TMP_Text pingText;
     public GameObject playerSpawn;
@@ -17,10 +16,9 @@ public class GameInstanceManager : MonoBehaviour
     public GameObject playerFeed;
     public GameObject feedGrid;
 
-    private void Awake()
+    void Start()
     {
-        // activates game canvas on start
-        gameCanvas.SetActive(true);
+        SpawnPlayer();
     }
 
     private void Update()
@@ -54,11 +52,8 @@ public class GameInstanceManager : MonoBehaviour
     // spawns player and disables game canvas
     public void SpawnPlayer()
     {
-        float randomValue = Random.Range(-5f, 5f);
-
         playerPrefab.SetActive(true);
-        PhotonNetwork.Instantiate(playerPrefab.name, new Vector2(playerSpawn.transform.position.x + randomValue, playerSpawn.transform.position.y + randomValue), Quaternion.identity, 0);
-        gameCanvas.SetActive(false);
+        PhotonNetwork.Instantiate(playerPrefab.name, new Vector2(playerSpawn.transform.position.x, playerSpawn.transform.position.y), Quaternion.identity, 0);
         sceneCamera.SetActive(true);
     }
 
